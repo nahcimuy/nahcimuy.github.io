@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .box,
+    .box1,
+    .box2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+        margin-top: 4px;
+    }
+
+    .green {
+        background-color: #6fb936;
+    }
+
+    .orange {
+        background-color: #f38630;
+    }
+
+    .grey {
+        background-color: #989898;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <p>一起反應動作</p>
+        <div class="box green"></div>
+        <div class="box orange"></div>
+        <div class="box grey"></div>
+    </div>
+    <div class="wrapper">
+        <p>間斷反應動作</p>
+        <div class="box1 green"></div>
+        <div class="box1 orange"></div>
+        <div class="box1 grey"></div>
+    </div>
+    <div class="wrapper">
+        <p>分開反應不同長度之動作</p>
+        <div class="box2 b1 green"></div>
+        <div class="box2 b2 orange"></div>
+        <div class="box2 b3 grey"></div>
+    </div>
+    <!-- 插入TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"> </script>
+    <script>
+        // 同時反應動作
+        TweenMax.to('.box', 1, { x: 100 });
+        // 單一間隔動作
+        TweenMax.staggerTo(".box1", 1, { rotation: 360, x: 200 }, 1);
+        // 分開反應不同長度之動作 timeLineMax
+        tween1 = TweenLite.to(".b1", 1, { x: 200 });
+        tween2 = TweenLite.to(".b2", 2, { x: 300 });
+        tween3 = TweenLite.to(".b3", 1, { x: 400 });
+
+        var tl = new TimelineMax();
+        tl.add([tween1, tween2, tween3], 3, "sequence", 0.5);
+    </script>
+</body>
+
+</html>

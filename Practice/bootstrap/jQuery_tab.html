@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(68, 20, 112);
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        #tab {
+            margin-top: 52px;
+        }
+
+        .tabs_btns {
+            display: flex;
+        }
+
+        .tabs_btns .tab_btn {
+            background-color: aliceblue;
+            border-radius: 5px 5px 0 0;
+            
+            padding: 10px 5px;
+            margin: 0 5px;
+        }
+
+        .tabs_btns .tab_btn.active {
+            color: antiquewhite;
+            background-color: black;
+        }
+
+        .tabs_contents {
+            border-radius: 5px;
+        }
+
+        .tabs_contents .tab_content {
+            padding: 20px;
+            background-color: aliceblue;
+            display: none;
+        }
+
+        .tabs_contents .tab_content.active {
+            display: block;
+        }
+
+        .tabs_contents .tab_content h1 {
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="tab">
+            <div class="tabs_btns">
+                <div id="tab_btna" class="tab_btn active">TitleA</div>
+                <div id="tab_btnb" class="tab_btn">TitleB</div>
+                <div id="tab_btnc" class="tab_btn">TitleC</div>
+            </div>
+            <div class="tabs_contents">
+                <div id="tab_contenta" class="tab_content active">
+                    <h1>TitleA</h1>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati voluptatum repellat. Nisi
+                    cum autem at earum harum quaerat iure consectetur, deserunt quia ex molestias, libero rerum,
+                    perferendis laboriosam repudiandae? Ipsa quasi perspiciatis, accusantium enim consequatur error
+                    iusto libero a unde sit minima, velit, dolores veritatis molestiae tempore recusandae deleniti
+                    repudiandae! Quaerat at repudiandae rerum sint, dicta sit perferendis suscipit, inventore harum
+                    placeat minus unde! Natus aut sunt iure nam voluptatum doloribus laboriosam necessitatibus alias
+                    cumque esse cum, minima quos temporibus delectus odit! Molestias eum tempora, modi magni quidem
+                    suscipit sequi tenetur id voluptatibus officiis neque voluptas consectetur deserunt voluptatem alias
+                    minima quas maxime beatae et aspernatur illo saepe! Omnis voluptatibus quos fuga ad totam cumque,
+                    nostrum maxime reprehenderit exercitationem sequi impedit odit sit nesciunt. Voluptatem tenetur
+                    totam suscipit! Minima et voluptatibus id quas sunt maxime doloribus debitis nemo, libero fugiat ex
+                    reprehenderit? In placeat alias voluptatem sed blanditiis voluptatibus repudiandae eos, earum
+                    debitis at, adipisci eius ipsam illum molestiae cum nostrum mollitia nam! Itaque eum nostrum
+                    voluptas natus, maiores nobis neque eligendi inventore nam, est saepe ipsa non quae minus nesciunt.
+                    Impedit, voluptatem dolores, magni sint, eaque a nemo maiores quis minus voluptatibus error hic rem
+                    beatae perspiciatis corporis?
+                </div>
+                <div id="tab_contentb" class="tab_content">
+                    <h1>TitleB</h1>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati voluptatum repellat. Nisi
+                    cum autem at earum harum quaerat iure consectetur, deserunt quia ex molestias, libero rerum,
+                    perferendis laboriosam repudiandae? Ipsa quasi perspiciatis, accusantium enim consequatur error
+                    iusto libero a unde sit minima, velit, dolores veritatis molestiae tempore recusandae deleniti
+                    repudiandae! Quaerat at repudiandae rerum sint, dicta sit perferendis suscipit, inventore harum
+                    placeat minus unde! Natus aut sunt iure nam voluptatum doloribus laboriosam necessitatibus alias
+                    cumque esse cum, minima quos temporibus delectus odit! Molestias eum tempora, modi magni quidem
+                    suscipit sequi tenetur id voluptatibus officiis neque voluptas consectetur deserunt voluptatem alias
+                    minima quas maxime beatae et aspernatur illo saepe! Omnis voluptatibus quos fuga ad totam cumque,
+                    nostrum maxime reprehenderit exercitationem sequi impedit odit sit nesciunt. Voluptatem tenetur
+                    totam suscipit! Minima et voluptatibus id quas sunt maxime doloribus debitis nemo, libero fugiat ex
+                    reprehenderit? In placeat alias voluptatem sed blanditiis voluptatibus repudiandae eos, earum
+                    debitis at, adipisci eius ipsam illum molestiae cum nostrum mollitia nam! Itaque eum nostrum
+                    voluptas natus, maiores nobis neque eligendi inventore nam, est saepe ipsa non quae minus nesciunt.
+                    Impedit, voluptatem dolores, magni sint, eaque a nemo maiores quis minus voluptatibus error hic rem
+                    beatae perspiciatis corporis?
+                </div>
+                <div id="tab_contentc" class="tab_content">
+                    <h1>TitleC</h1>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati voluptatum repellat. Nisi
+                    cum autem at earum harum quaerat iure consectetur, deserunt quia ex molestias, libero rerum,
+                    perferendis laboriosam repudiandae? Ipsa quasi perspiciatis, accusantium enim consequatur error
+                    iusto libero a unde sit minima, velit, dolores veritatis molestiae tempore recusandae deleniti
+                    repudiandae! Quaerat at repudiandae rerum sint, dicta sit perferendis suscipit, inventore harum
+                    placeat minus unde! Natus aut sunt iure nam voluptatum doloribus laboriosam necessitatibus alias
+                    cumque esse cum, minima quos temporibus delectus odit! Molestias eum tempora, modi magni quidem
+                    suscipit sequi tenetur id voluptatibus officiis neque voluptas consectetur deserunt voluptatem alias
+                    minima quas maxime beatae et aspernatur illo saepe! Omnis voluptatibus quos fuga ad totam cumque,
+                    nostrum maxime reprehenderit exercitationem sequi impedit odit sit nesciunt. Voluptatem tenetur
+                    totam suscipit! Minima et voluptatibus id quas sunt maxime doloribus debitis nemo, libero fugiat ex
+                    reprehenderit? In placeat alias voluptatem sed blanditiis voluptatibus repudiandae eos, earum
+                    debitis at, adipisci eius ipsam illum molestiae cum nostrum mollitia nam! Itaque eum nostrum
+                    voluptas natus, maiores nobis neque eligendi inventore nam, est saepe ipsa non quae minus nesciunt.
+                    Impedit, voluptatem dolores, magni sint, eaque a nemo maiores quis minus voluptatibus error hic rem
+                    beatae perspiciatis corporis?
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <SCript>
+        $('.tab_btn').click(function () {
+           var btn_index = $('.tab_btn').index(this)+1;
+        //    close all
+        $(".tab_content").removeClass("active")
+        // select the one
+        $('.tab_content:nth-child('+btn_index+')').addClass("active");
+
+        });
+    </SCript>
+</body>
+
+</html>

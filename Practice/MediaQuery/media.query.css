@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+@media (max-width:375px)
+{
+nav{
+    width: 100%;
+    height: 67px;
+    background-color:brown;
+    padding: 5px;
+    position: relative;
+}
+nav .bar{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: calc(50% - 25px);
+    top:calc(50% - 25px);
+}
+.icon{
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+    line-height: 67px;
+}
+.font{
+    /* display: none; */
+    }
+nav .bar:hover {
+    width: 50px;
+    height: 120px;
+    display: block;
+    /* background-color: orangered;
+    font-size: 16px;
+    text-align: center;
+    text-decoration:none;
+    letter-spacing: 3px; */
+    }
+#photo1{
+    background-image: url(./img/coffee\ box.jpeg);
+    }
+#photo2{
+    background-image: url(./img/coffee.jpeg);
+    }
+#photo3{
+    background-image: url(./img/presso.jpeg);
+    }
+.photo{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}    
+}
