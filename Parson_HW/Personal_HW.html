@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- // Add google font -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- // Add swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+  <!-- Add Tempus Dominus -->
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+
+  <!-- 插入解鎖文件 -->
+  <link rel="stylesheet" type="text/css" href="unlock.css">
+  <!-- // Add font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  .container {
+    width: 1800px;
+  }
+
+  @media(max-width: 1920px) {
+    .container {
+      width: 80%;
+    }
+  }
+
+  nav {
+    position: fixed;
+  }
+
+  #banner {
+    position: relative;
+    padding-top: 59px;
+  }
+
+  .fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+  }
+
+  #banner .swiper-container {
+    width: 100%;
+    height: 700px;
+  }
+
+  #product_electronic .swiper-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    color: #f0781e;
+    background: #ccc;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  h2 {
+    /* 40px */
+    margin: 0 0 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #212529;
+  }
+
+  h3 {
+    /* 30px */
+    margin: 0;
+    font-size: 0.8rem;
+    color: #007bff;
+  }
+
+  h4 {
+    /* 18px */
+
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+    color: #004ea2;
+  }
+
+  .little,
+  h5 {
+    /* 16px */
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    color: #212529;
+  }
+
+  h6 {
+    /* 14px */
+    margin: 0;
+    font-size: 0.8rem;
+    text-align: justify;
+    letter-spacing: .2rem;
+    line-height: 1rem;
+    color: #f0781e;
+  }
+
+  @media(max-width: 1200px) {
+    .col-gold-lg {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .col-gold-sm {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .col-gold-sm .text {
+      padding: 50px 0;
+    }
+
+    .qrcode {
+      width: 50%;
+      max-width: 150px;
+    }
+  }
+
+  .qrcode {
+    max-width: 150px;
+  }
+
+  .W-100 {
+    width: 100%;
+  }
+
+  .lock {
+    height: 40px;
+    width: 100%;
+  }
+
+  footer {
+    background-color: #e3f2fd;
+  }
+  span{
+    width: 500px;
+    height: 500px;
+    }
+  .group{
+      background-image: url("./img/group-01.jpg");
+      background-position: center;
+      background-size: contain;
+  }
+  .future{
+      background-image: url("./img/future.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed" style="background-color: #e3f2fd;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png " width="30" height="30" alt="logo">
+      </a>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">智緣</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              丞起
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">程式規劃與設計</a>
+              <a class="dropdown-item" href="#">電控規劃與製作</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">維護檢修</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">目標</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">聯繫</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="banner">
+    <div class="container-fluid swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide W-100" style=" background-image: url('./img/banner_auto.png')"></div>
+        <div class="swiper-slide"><img src="./img/banner_ee.jpg" alt="Electronic_Control"></div>
+        <div class="swiper-slide"><img src="./img/banner_auto.png" alt=""></div>
+
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section id="about" class="px-1 py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2>智緣
+            <p class="little">公司簡介。經營理念</p>
+          </h2>
+          <h5>
+            <div class="text">
+              公司於民國92年成立，將自身多年的實戰經驗，以電機整合做為主力目標，以電腦控制技術整合電子、機械技術幫助達到自動控制目的，以通訊系統控制與監測自動控制之情況。本公司以電機背景增進技術與服務品質要求，提供更完整，更全方位自動化及機電整合之服務，協助客戶達到智慧型控制與自動化
+              ，提昇客戶其生產效率及品質。</div>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="product" class="px-1 py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <h2>丞現
+            <p class="little">營業介紹</p>
+          </h2>
+          <h5>
+            <div class="text mb-4">公司承接的工作項目以自動控制為主軸，當業主告知相關需求與預計時程時，會先評估其可行性，在溝通達到共識後進行作業，目前營業項目可分成三大方向
+            </div>
+          </h5>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-10 m-1 card p-1">
+          <div class="card-body">
+            <img class="w-100 card-img-top my-3" src="./img/program.png" alt="Program">
+            <h4>程式規劃與設計</h4>
+            <h6>根據業主的需求尋找合適之電控硬體與PLC，在撰寫與導入相關程式碼執行動作後，配對其人機介面，便於業主控管與操作。</h6>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-10 m-1 card text-center p-1">
+
+          <div class="card-body">
+            <img class="w-100 card-img-top my-3" src="./img/配電盤.jpg" alt="Electronic_Control">
+            <h4>電控規劃與製作</h4>
+            <h6>與業主進行溝通並繪製電路圖確認配置後，製作配電盤(或電控箱)配線後，進行現場安裝試車，確認是否正常運作。</h6>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-10 card m-1 text-right p-1">
+          <div class="card-body">
+            <img class="w-100 card-img-top my-3" src="./img/現場安裝維修.jpg" alt="Service">
+            <h4>維護檢修</h4>
+            <h6>若設備有需變更操作或故障，導致動作指令無法順利執行時，會依業主情況進行系統測試與調整。</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="product_program" class="px-1 py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7 mb-4">
+          <h2>程式規劃與設計
+            <p class="little">硬體。品牌</p>
+          </h2>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-6 col-10">
+          <img class="W-100" src="./img/ac.png" alt="AC">
+        </div>
+        <div class="col-md-6 col-10 p-5">
+          <h5>根據業主的需求，選擇或沿用合適啟動對應動作之相關電控硬體，常見電控硬體為無熔絲開關、伺服控制器、變頻器等，以利動作與指令能夠執行。圖為AC伺服器、變頻器。</h5>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-6 col-10 order-md-2">
+          <img class="W-100" src="./img/hmi.png" alt="hmi">
+        </div>
+        <div class="col-md-6 col-10 p-5 order-md-1">
+          <h5>
+            公司找尋能搭配硬體之PLC，負責研發輸寫操作動作之程式碼並設計動作的執行順序，寫入相關硬體導入之步驟操作，各大品牌均有撰寫經驗。<br>人機介面選擇與PLC型號能夠連接對應之產品，設計出具美感且方便操作的畫面，以利於機台、設備上執行的動作。
+          </h5>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="product_electronic" class="px-1 py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7 mb-4">
+          <h2>電控規劃與設計
+            <p class="little">實際。圖片</p>
+          </h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">以下為目前所繪製的配置圖、箱體圖、配線圖與配電盤(箱)之圖片</div>
+              <div class="swiper-slide">以CAD繪製配線圖，顯示電路的實際使用的連線，
+                讓客戶先初步了解配電盤中元件、線路、電源及訊號的連接。</div>
+              <div class="swiper-slide">複雜的會有配置圖方便對照，若需訂製會另畫箱體圖給廠商訂製。</div>
+              <div class="swiper-slide">將配電盤固定在電控箱後，協助控制箱於現場的定位及試車確認是否有順利執行動作。</div>
+
+            </div>
+            <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+          <img src="" alt="">
+        </div>
+        <div class="col">
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="Aims" class="px-1 py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2>目標
+            <p class="little">主要客群。未來願景</p>
+          </h2>
+          <h5>
+            <div class="text mb-4">依照營業項目，主要經營有自動化與機電整合之需求的往來客戶，真誠對待每一位業主與廠商，維持一貫積極態度，讓三方能夠永續經營。</div>
+          </h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md"></div>
+        <div class="col-md-4 col-10 m-1">
+          <div class="card t1">
+            <div class="card-body a1">
+              <img src="./img/logo.png" class="card-img-top" alt="...">
+              <p class="card-text ">主要客群</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md"></div>
+        <div class="col-md-4 col-10 m-1">
+          <div class="card t2">
+            <div class="card-body">
+              <img src="./img/logo.png" class="card-img-top" alt="...">
+              <p class="card-text ">未來願景</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class=" px-1 py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <h2>聯繫
+            <p class="little">聯絡資訊</p>
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-gold-lg px-5">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6 col-10">
+                <label for="inputState">主旨</label>
+                <select id="inputState" class="form-control">
+                  <option selected>想要聯絡，了解更多</option>
+                  <option>我是人才，成為一員</option>
+                  <option>我是客戶，需要幫忙</option>
+                  <option>我是廠商，想要合作</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6 col-10">
+                <label for="inputPassword4">姓名</label>
+                <input type="name" class="form-control" id="inputname4" placeholder="陳x明">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6 col-10">
+                <label for="inputJob_title">任職單位&職稱</label>
+                <input type="text" class="form-control" id="inputJob_title" placeholder="xx單位 工程師">
+
+              </div>
+              <div class="form-group col-md-6 col-10">
+                <label for="inputTime4">聯絡時間</label>
+                <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                  <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                  </div>
+                </div>
+                <label for="inputMDEx1">填入方便聯繫的時間</label>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6 col-10">
+                <label for="inputPhone4">連絡電話</label>
+                <input type="phone" class="form-control" id="inputPhone4" placeholder="09xx-xxx-xxx">
+              </div>
+              <div class="form-group col-md-6 col-10">
+                <label for="inputEmail4">電子信箱</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="name@example.com">
+                <small id="emailHelp" class="form-text text-muted">我們不會將你的電子郵件分享給其他人</small>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">洽詢內容</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="我想問..."></textarea>
+            </div>
+            <div class="form-row justify-content-between">
+              <div class="form-group col-sm-6">
+                <div class="lock"></div>
+              </div>
+              <div class="form-group col-sm-4">
+                <button type="button" class="btn btn-primary btn-block">確認送出
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-gold-sm">
+
+          <div class="text order-sm-2">
+            <img class="qrcode order-sm-1" src="./img/line qr-code.png" alt="LineQRCode">
+            <div class="contact">
+              <h3>
+                <i class="fas fa-phone-alt"></i>
+                04-22311719
+              </h3>
+              <h3>
+                <i class="fas fa-fax"></i>04-22380229
+              </h3>
+              <h3>
+                <i class="fas fa-at"></i>zh.cheng@msa.hinet.net
+              </h3>
+              <h3>
+                <i class="fas fa-map-marker-alt"></i>
+                台中市北屯區興安路一段104號
+              </h3>
+            </div>
+
+
+          </div>
+          <div class="map my-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.119175224024!2d120.69035031435675!3d24.167552878630495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917e6e6165943%3A0x8d4045e464c7ad8!2z5pm65Lie5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1568563937178!5m2!1szh-TW!2stw"
+              width="280" height="210" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <div class="row p-3">
+        <div class="col-xl-9 ">
+          © NAHCIMUY All rights reserved. 本網站僅供學術用，部分內容取自網路，如有侵權請告知
+        </div>
+        <div class="col-xl-1">BACK
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+  <!-- 換圖片 -->
+  <script>
+    $("#Aims .t1").hover(
+      function () {
+        $(this).append($('<span class="group"></span>'));
+        
+      }, function () {
+        $(this).find("span").last().remove();
+      }
+    );
+    $("#Aims .t2").hover(
+      function () {
+        $(this).append($('<span class="future"></span>'));
+        
+      }, function () {
+        $(this).find("span").last().remove();
+      }
+    );
+  </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <!-- Add Tempus Dominus -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+
+  <!-- 插入解鎖JS -->
+  <script src='http://cdn.staticfile.org/jquery/1.10.0/jquery.min.js'></script>
+  <script src='unlock.js'></script>
+
+
+  <script>
+    $('.lock').slideToUnlock({
+      text: '記得向右滑動',
+      succText: '恭喜解鎖成功',
+      succFunc: 'close()'
+    });
+  </script>
+  <script>
+    var swiper = new Swiper('#product_electronic .swiper-container', {
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
