@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+        integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        }
+    body {
+        margin: 0;
+    }
+
+    header {
+        background-color: #ad5858;
+    }
+
+    .logo {
+        height: 87px;
+        display: block;
+    }
+
+    .container {
+        max-width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .nav_group {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_link {
+        font-size: 40px;
+        color: aliceblue;
+        padding: 20px;
+        text-decoration: none;
+        display: list-item;
+    }
+    .icon{
+        display: none;
+    }
+@media(max-width: 460px){
+.header{
+    position: relative;
+}
+.main_nav{
+    width: 100%;
+    background-color: #ad5858;
+    text-align: center;
+    position: absolute;
+    top: 86px;
+    display: none;
+    }
+.main_nav.active{
+    display: block;
+}    
+.nav_group {
+    display: block;
+    margin: 0;
+    padding: 0;
+    }
+.icon {
+    display: block;
+    padding: 2px;
+    font-size: 40px;
+    line-height: 40px;
+    align-items: center;
+    color: #5a2222;
+    border: 3px solid #5a2222;
+    border-radius: 5px;
+    margin: auto 5px;
+    }
+#bar{
+        display: none;
+    }
+#bar.open{
+        display: block;
+    }
+#times{
+        display: none;
+    }
+
+#times.open{
+        display: block;
+    }
+    }
+    .about_section {
+        padding: 30px 0;
+    }
+
+    .view_section {
+        padding: 30px 0;
+        background-color: rgb(173, 88, 88);
+    }
+
+    .content_section {
+        padding: 30px 0;
+    }
+
+    .footer-color {
+        padding: 30px 0 20px 0;
+        background-color: rgb(173, 88, 88);     
+    }
+
+    .footer_nav {
+        display: flex;
+    }
+
+    .footer_link {
+        font-size: 20px;
+        color: #6b3824;
+        text-decoration: none;
+        list-style-type: none;
+        display: list-item;
+    }
+
+    .copyright {
+        background-color: rgb(121, 53, 53);
+        display: flex;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img class="logo" src="./img/logo.png" alt="logo">
+            </div>
+
+            <nav class="main_nav active">
+                <ul class="nav_group">
+                    <li><a class="nav_link" href="">Home</a></li>
+                    <li><a class="nav_link" href="">Prodot</a></li>
+                    <li><a class="nav_link" href="">Contant</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <i id="bar" class="fas fa-bars open"></i>
+                <i id="times" class="fas fa-times"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="about_section">
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, asperiores doloribus, ut nesciunt expedita,
+            ipsam sequi laborum esse fugiat officia deleniti nulla debitis architecto nostrum aperiam repudiandae
+            voluptas necessitatibus. Voluptatum quasi voluptatem suscipit nemo enim voluptas, est quos reprehenderit
+            quia laudantium soluta. Quas autem pariatur placeat iusto alias deserunt eos enim quasi quos facilis
+            recusandae aspernatur veritatis voluptas, eveniet quidem dicta perspiciatis fugit? Tempora exercitationem
+            necessitatibus porro aliquam similique ducimus ad quaerat vero dolorem provident. Velit nobis mollitia
+            possimus dolorem hic amet fugiat ipsum, dolorum animi dolores corporis provident architecto blanditiis, cum
+            suscipit, eius ipsam inventore sit. Dolor sapiente ad eligendi maxime veritatis, facilis facere magni
+            aspernatur assumenda deserunt quaerat id temporibus ratione, corporis quidem voluptatibus accusantium nisi
+            aperiam ut minus eaque. Perferendis, quis sed quisquam tenetur officiis aliquid, excepturi laudantium, sint
+            veniam quod eius eligendi nesciunt odit sit totam earum distinctio sunt ea deserunt nobis? Impedit cumque
+            atque alias corporis vel praesentium autem esse! Aspernatur possimus enim laboriosam, ea minima asperiores
+            blanditiis eum, corrupti optio excepturi quasi molestiae recusandae numquam fugiat facere voluptatum?
+            Corporis, iste laborum ipsa aperiam reprehenderit quo quam repellendus magnam error maxime dolorem non ea?
+            Dolorum minima ullam totam eos vel rem illum magnam nostrum provident alias eius recusandae voluptatum ad
+            delectus voluptatem, exercitationem minus laboriosam quos? In temporibus, ipsam praesentium voluptate, sunt
+            pariatur porro nobis atque neque nemo repellat corrupti reprehenderit dignissimos? Quis molestias neque
+            ipsam corporis quas quos debitis quo similique nobis soluta incidunt assumenda iusto tempora magni
+            laboriosam iure totam velit consectetur, accusamus adipisci alias voluptatibus. Labore itaque aliquam vero,
+            sit unde ex, amet quibusdam nulla, quaerat saepe quo ut ipsam inventore beatae aspernatur fugit totam fugiat
+            necessitatibus odit eligendi aperiam. Dignissimos adipisci reprehenderit mollitia obcaecati iste veritatis
+            aut nemo amet nihil consequuntur, pariatur quos illum at, vel praesentium dolorum sint itaque quo?
+        </div>
+    </section>
+
+
+    <section class="view_section">
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusantium minima cupiditate. Quidem
+            explicabo harum deserunt consequatur cupiditate, nisi voluptate ut dicta porro consectetur velit amet
+            possimus commodi accusantium est autem quia ex eaque vero impedit labore? Distinctio, deserunt eos? Impedit,
+            dignissimos exercitationem vel nam fuga cumque obcaecati vitae odit sed, accusantium animi culpa illum ex.
+            Voluptas perspiciatis quisquam id beatae itaque quod omnis placeat excepturi sunt minus aspernatur
+            exercitationem repudiandae molestiae in numquam, eveniet enim? Provident totam eaque nihil voluptate libero
+            explicabo pariatur aliquam, similique expedita ad nisi impedit porro consequatur itaque nam ut quos quidem
+            nostrum saepe distinctio.
+        </div>
+    </section>
+
+    <section class="content_section">
+        <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ratione mollitia dolore
+            unde vitae labore quasi non fugiat explicabo deserunt commodi quo possimus numquam optio molestias molestiae
+            natus eius iste. Nemo perspiciatis odit sint ab tempore molestiae facilis nam ipsam explicabo? Cum porro
+            voluptas, nihil harum eaque id maiores, delectus inventore impedit cupiditate ipsum optio natus dolorum qui
+            totam, aliquam blanditiis? Nemo ducimus praesentium nulla, quisquam reiciendis nesciunt, cum culpa obcaecati
+            est suscipit, distinctio fugit sit earum magnam animi? Dolor alias harum quia corporis totam. Iure quam
+            architecto impedit quo, cumque facere? Minima necessitatibus porro a optio quas quo fugiat. Laudantium
+            perferendis maxime odio quibusdam alias, ex porro natus labore nemo dolorem libero. Libero recusandae
+            tenetur optio aspernatur facere eius iusto officia et, vero, laboriosam ea voluptatum necessitatibus
+            repudiandae deleniti deserunt modi ipsa labore aut dolorum ab quas. Repellendus ab, velit enim iste, minus
+            debitis maiores maxime deleniti doloribus unde praesentium, ut provident doloremque soluta tempora autem?
+            Ratione odit molestiae in magnam nihil natus, accusantium hic dolor reiciendis libero voluptas impedit
+            eveniet nam consectetur eum delectus consequuntur eaque suscipit veritatis ea aut, veniam ut quisquam ab!
+            Laboriosam debitis laudantium sed iste ullam officia quaerat nostrum, sunt a deserunt perferendis,
+            consequatur rerum deleniti! Voluptate dolore inventore sint quasi omnis! Nostrum eaque minus in iure
+            deserunt eum. Fugit quod nemo aliquam voluptates quaerat aut rerum officiis accusamus, impedit incidunt
+            dolor similique assumenda maiores exercitationem veniam vitae inventore aperiam. Voluptatibus minus
+            molestias hic rem similique unde autem iste sequi et repellendus ducimus modi, doloremque illum animi eius
+            nemo quidem doloribus officiis. Qui eveniet nemo, odio nobis porro non facere maiores illum, accusantium
+            voluptas eaque minima excepturi ut! Atque doloremque earum provident explicabo expedita, sint molestias
+            distinctio? Earum quod minus libero. Aliquam nisi repellat quos eaque quisquam maiores, laborum quia
+            quaerat. Iure, repudiandae ab!
+        </div>
+    </section>
+
+
+    <footer class="footer-color">
+        <div class="container">
+            <nav class="footer_nav">
+                <ul>
+                    <a class="footer_link" href="">
+                        <h3>home</h3>
+                    </a>
+                    <ul>
+                        <li>頁面1-子面1</li>
+                        <li>頁面1-子面2</li>
+                        <li>頁面1-子面3</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <a class="footer_link" class="footer_link" href="">
+                        <h3>home</h3>
+                    </a>
+                    <ul>
+                        <li>頁面2-子面1</li>
+                        <li>頁面2-子面2</li>
+                        <li>頁面2-子面3</li>
+                    </ul>
+                </ul>
+
+                <ul>
+                    <a class="footer_link" href="">
+                        <h3>home</h3>
+                    </a>
+                    <ul>
+                        <li>頁面3-子面1</li>
+                        <li>頁面3-子面2</li>
+                        <li>頁面3-子面3</li>
+                    </ul>
+                </ul>
+
+                <ul>
+                    <a class="footer_link" href="">
+                        <h3>home</h3>
+                    </a>
+                    <ul>
+                        <li>頁面4-子面1</li>
+                        <li>頁面4-子面2</li>
+                        <li>頁面4-子面3</li>
+                    </ul>
+                </ul>
+
+                <ul>
+                    <a class="footer_link" href="">
+                        <h3>home</h3>
+                    </a>
+                    <ul>
+                        <li>頁面5-子面1</li>
+                        <li>頁面5-子面2</li>
+                        <li>頁面5-子面3</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <a class="footer_link" href="">
+                        <h3>home</h3>
+                    </a>
+                    <ul>
+                        <li>頁面6-子面1</li>
+                        <li>頁面6-子面2</li>
+                        <li>頁面6-子面3</li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container">
+            <p> 2019 Twitter, Inc.
+                <a href="https://help.twitter.com/rules-and-policies/twitter-cookies">Cookie</a>
+                <a href="https://twitter.com/privacy">隱私</a>
+                <a href="https://twitter.com/tos">條款與條件</a>
+            </p>
+        </div>
+    </div>
+<Script>
+var icon = document.querySelector(".icon")
+var main_nav = document.querySelector(".main_nav")
+icon.onclick = function(){
+    main_nav.classList.toggle("active")
+    if (main_nav.classList.contains("active")) {
+        times.classList.remove("open");
+        bar.classList.add("open");
+   }
+    else{times.classList.add("open");
+        bar.classList.remove("open");}
+}
+
+</Script>    
+</body>
+
+</html>

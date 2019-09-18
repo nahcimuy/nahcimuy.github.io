@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+ /* 第三種切換 */
+#left{
+    display: none;
+}
+#right{
+    display: none;
+}
+#left.active{
+    display: block;
+}
+#right.active{
+    display: block;
+}
+
+</style>
+
+<body>
+    <img id="img" height="500px" src="./img/photo.jpeg" alt="photo">
+<p>第一種切換</p>
+    <img id="ring" height="500px" src="https://images.pexels.com/photos/2849743/pexels-photo-2849743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="ear_ring">
+
+    <!-- <img src="https://images.pexels.com/photos/2849742/pexels-photo-2849742.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="ring"> 第二張圖片 -->
+<p>第二種切換</p>
+<div>
+<img id="right" width="500px" class="active" src="https://images.pexels.com/photos/2825577/pexels-photo-2825577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="model">
+<img id="left" width="500px" class="" src="https://images.pexels.com/photos/2825574/pexels-photo-2825574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="model"></div>
+<button id="btn">change</button>
+<p>第三種切換</p>
+<script>
+// 第一種       
+        var zxc = document.querySelector("#img")
+        
+        //直接換成另一張 zxc.onclick=function(){
+        // zxc.src='./img/photo2.jpg';
+        // }
+        zxc.onclick = function(){
+        var img_src = img.getAttribute("src");
+        if (img_src === "./img/photo.jpeg") {
+            // 假設圖片路徑為photo
+            img.setAttribute("src" , "./img/photo2.jpg");
+            // 變更路徑為photo2
+        } else {img.setAttribute("src" ,"./img/photo.jpeg");
+        // 若路徑不是photo，則變更為photo
+        }
+        }    
+// 第二種    
+    var ringring =document.querySelector("#ring");
+    ringring.onclick=function() {
+        var ringring = ring.src;
+        if(ringring === "https://images.pexels.com/photos/2849743/pexels-photo-2849743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"){
+            ring.src ="https://images.pexels.com/photos/2849742/pexels-photo-2849742.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+        }else{ ring.src ="https://images.pexels.com/photos/2849743/pexels-photo-2849743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+    }
+// 第三種
+    var btn =document.querySelector("#btn");
+    var left =document.querySelector("#left");
+    var right =document.querySelector("#right");
+    btn.onclick = function(){
+    if (left.classList.contains("active")) {
+        left.classList.remove("active");
+        right.classList.add("active");
+    }else{left.classList.add("active");
+        right.classList.remove("active");}
+    }
+//自己試的 能交換一次 bta.onclick = function(){
+        //     if (zxc == document.querySelector("#img")) {
+        //         zxc.src = './img/photo2.jpg';}
+        // var asd= zxc;       
+        // bta.onclick = function(){
+        //     asd.src = "./img/photo.jpeg";}      
+        // }
+    </script>
+</body>
+
+</html>

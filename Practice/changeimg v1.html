@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    #img {
+        width: 500px;
+    }
+</style>
+
+<body>
+    <img id="img" src="./img/photo.jpeg" alt="photo">
+    <script>
+
+        var zxc = document.querySelector('#img')
+
+        // photo.onclick=function(){
+        //     photo.src='./img/photo2.jpg';
+        // }
+
+        
+        zxc.onclick = function(){
+            if (zxc == document.querySelector('#img')) {
+                zxc.src = './img/photo2.jpg';
+        console.log('zxc');
+            }}
+            else {zxc.src = './img/photo2.jpg';
+            {zxc.src = './img/photo.jpeg';}
+            }
+
+    </script>
+</body>
+
+</html>

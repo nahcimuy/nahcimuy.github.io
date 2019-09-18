@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+}
+.cards{
+
+}
+</style>
+<body>
+    <div class="all">
+        <div class="container">
+        <div class="cards">
+            <div class="card">
+                <h2 class="city"台中市></h2>
+                <h3>
+                   氣溫 <br>
+                    降雨率 <br>
+                    圖片 
+                </h3>
+            </div>
+        
+        </div>
+        </div>
+    </div>
+    <script>
+    fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E8%87%BA%E4%B8%AD%E5%B8%82')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(myJson);
+    
+    console.log(myJson.records.location[0].weatherElement);
+  });
+  
+    </script>
+</body>
+</html>

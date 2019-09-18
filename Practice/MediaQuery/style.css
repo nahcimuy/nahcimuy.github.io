@@ -1,0 +1,395 @@
+*{
+  box-sizing: border-box;  
+    }
+body{
+    margin: 0;
+    }
+
+nav{
+    width: 320px;
+    height: 100vh;
+    padding: 10px;
+    background-color: #441c0f;
+    display: flex;
+    position: relative;
+    }
+#select{
+    width: 300px;
+    height: 100%;
+    }
+.logo{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    }
+.icon{
+    display: none;
+    }    
+.bar{
+    display: block;
+    font-size: 30PX;
+    text-align: center;
+    letter-spacing: 5PX;
+    margin: 200px 0;}
+.font1{
+    font-size: 30PX;
+    text-decoration: none;
+    text-align: center;
+    color: #e9a362;
+    font-family: 'Noto Sans TC', sans-serif;
+    ;
+}
+.font1:hover{
+    text-decoration: none;
+    color: #96683e;
+    border-radius: 10px; 
+    font-weight: bolder;
+    background-color: #e9a362;
+}
+
+.main{
+    display: flex;
+    width: calc(100% - 320px);
+    height: 100vh;
+    background-color: #aa7e3b;
+    }
+.border{
+    display: flex;
+    margin: auto;
+    }    
+.main .border .photo{
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    }
+     
+.photo1{
+    background-image: url(./img/coffee.jpeg);
+    width: 300px;
+    height: 720px;
+    }
+
+.photo2{
+    background-image: url(./img/coffee\ box.jpeg);
+    width: 300px;
+    height: 720px;
+    margin: 0 10px;
+    }     
+
+.photo3{
+    background-image: url(./img/presso.jpeg);
+   
+    width: 300px;
+    height: 720px;
+    }
+.photo1:hover{
+    width: 800px;
+    transition: 0.8s;
+}  
+.photo2:hover{
+    width: 800px;
+    transition: 0.8s;
+    } 
+.photo3:hover{
+    width: 800px;
+    transition: 2s;
+    }  
+.float-L{
+    float: left;
+    }
+
+@media(max-width: 1280px){
+nav{
+    width: 220px;
+    height: 100vh;
+    padding: 10px;
+    background-color: #441c0f;
+    display: flex;
+    position: relative;
+    }
+#select{
+    width: 200px;
+    height: 100%;
+    }
+.logo{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 40px;
+    left: 35px;
+    }
+.icon{
+    display: none;
+    }    
+.bar{
+    display: block;
+    font-size: 40PX;
+    text-align: center;
+    letter-spacing: 5PX;
+    margin: 200px 0;
+    }
+.main{
+    display: flex;
+    width: calc(100% - 220px);
+    height: 100vh;
+     background-color: #aa7e3b;
+    }
+.border{
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    }    
+
+.main .border .photo{
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.photo1{
+    background-image: url(./img/coffee.jpeg);
+    width: 600px;
+    height: 350px;
+    margin-bottom:10px ;
+    opacity: 0.6;
+    } 
+.photo2{
+    background-image: url(./img/coffee\ box.jpeg);
+    margin:0 10px 0 0;
+    width: 295px;
+    height: 350px;
+    float: left;
+    opacity: 0.6;
+    }     
+.photo3{
+    background-image: url(./img/presso.jpeg);
+    width: 295px;
+    height: 350px;
+    float: left;
+    opacity: 0.6;
+    }
+.photo1:hover{
+    width: 600px;
+    opacity: 1;
+    transition: 1s;
+    }  
+.photo2:hover{
+    width: 295px;
+    opacity: 1;
+    transition: 1s;
+    } 
+.photo3:hover{
+    width: 295px;
+    opacity: 1;
+    transition: 1s;
+    }     
+.float-L{
+    float: left;
+    }
+}
+@media(max-width: 830px){
+nav{
+    width: 100%;
+    height:80px;
+    padding: 5px;
+    background-color: #441c0f;
+    position: unset;
+    display: flex;
+    }
+#select{
+    width: 100%;
+    height: 100%;
+    background-color:  #441c0f;
+    float: right;
+    }
+.logo{
+    width: 60px;
+    height: 60px;
+    position: unset;
+    left: 10px;
+    top:10px; 
+    float: left;
+    }
+.logo:hover{
+    width: 30px;
+    transition: 0.8s;
+    }
+.icon{
+    display: none;}    
+.bar{
+    display: flex;
+    font-size: 30PX;
+    text-align: center;
+    letter-spacing: 5PX;
+    margin: 17px;
+    float: right;
+    }
+.main{
+    display: flex;
+    width: 100%;
+    height: 944px;
+    background-color: #aa7e3b;
+    }
+.border{
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    }    
+    
+.main .border .photo{
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+.photo1{
+    background-image: url(./img/coffee.jpeg);
+     width:calc(100vw - 40px);
+    height: 400px;
+    margin-bottom:10px ;
+    opacity: 1;
+    } 
+.photo2{
+    background-image: url(./img/coffee\ box.jpeg);
+    margin:0 10px 0 0;
+    width: calc(50vw - 25px);
+    height: 400px;
+    float: left;
+    opacity: 1;
+    }     
+.photo3{
+    background-image: url(./img/presso.jpeg);
+    width: calc(50vw - 25px);
+    height: 400px;
+    float: left;
+    opacity: 1;
+    }
+.photo1:hover{
+    margin: auto;
+    opacity: 1;
+    transform: scale(0.9, 0.9);
+    transition: 1s;
+    }  
+.photo2:hover{
+    width: 350px;
+    opacity: 1;
+    transition: 1s;
+    } 
+.photo3:hover{
+    width: 350px;
+    opacity: 1;
+    transform: matrix(1, 0.2, 0, 1, 0, 0);
+    transition: 1s;
+    } 
+.float-L{
+    float: left;
+    }
+}
+
+@media(max-width: 375px){   
+nav{
+    width: 375px;
+    height: 67px;
+    padding: 5px;
+    background-color: #441c0f;
+    position: relative;
+    display: block;
+    }
+.logo{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: calc(50% - 33px);
+    top: 1px; 
+    float: unset;
+    }
+#select{
+    width: 60px;
+    height: 100%;
+    background-color: #b36131;
+    float: unset;
+    }
+.icon{
+    font-size: 50px;
+    color: #f0c083;
+    text-align: center;
+    line-height: 50PX;
+    padding: 0 7px;
+    display: block;}    
+.bar{
+    display: none;
+    font-size: 20PX;
+    text-align: center;
+    letter-spacing: 5PX;
+    margin: 0;
+    float: unset;
+    }
+.font1{
+    font-size: 20px;
+    
+}    
+nav #select:hover .bar{
+    width: 60px;
+    height: 90px;
+    display:block;
+    background-color: #a57926;
+    }
+    
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 600px;
+    background-color: #aa7e3b;
+    }
+.border{
+    display: inline;
+    }    
+.main .border .photo{
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.photo1{
+    background-image: url(./img/coffee.jpeg);
+    width: 375px;
+    height: 200px;
+    margin: unset;
+    opacity: 0.5;
+    } 
+.photo2{
+    background-image: url(./img/coffee\ box.jpeg);
+    margin:0;
+    width: 375px;
+    height: 200px;
+    opacity: 0.5;
+    }     
+.photo3{
+    background-image: url(./img/presso.jpeg);
+    width: 375px;
+    height: 200px;
+    opacity: 0.5;
+    }
+.photo1:hover{
+    width: 375px;
+    margin: auto;
+    opacity: 1;
+    transition: 1s;
+        }  
+    .photo2:hover{
+    width: 375px;
+    opacity: 1;
+    transition: 1s;
+    transform: scale(0.9, 0.9);
+    } 
+    .photo3:hover{
+    width: 375px;
+    opacity: 1;
+    transition: 1s;
+    transform: scale(0.9, 0.9);
+    }     
+.float-L{
+    float: none;
+    }
+}
+  

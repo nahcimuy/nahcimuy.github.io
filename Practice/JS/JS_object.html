@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    max-width: 1140px;
+}
+.cards{
+    display: flex;
+}
+.cards .card{
+    width: 30%;
+    margin: 0 10px;
+}
+.img_size{
+    width: 100%;
+}
+.cards .card .card_text h2{
+font-size: 30px;
+}
+.cards .card .card_text h3{
+font-size: 26px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="cards">
+            
+        </div>
+    </div>
+    <script>
+    var tissue = [{
+        //var 變數名稱 = 物件object{}
+        // 物件通常以{key:value}形式
+        // 但能跟陣列 圖示[] 一起使用 e.g.[{},{}]
+        name:"倍潔雅幾米完美袖珍衛生紙",
+        imgsrc:"https://e.ecimg.tw/items/DAAG5YA90097OYM/i010006_1531469030.jpg",
+        alt_text:"幾米完美",
+        place:"Taiwan",
+        Effective_period: 5,
+        size:["210x195",10,2,"30包"],
+        ingredient:"100% Primary pulp",
+        slogan:"柔韌兼具完美比例",   
+    },{
+        name:"舒潔迪士尼袖珍包面紙",
+        imgsrc:"https://www.rt-mart.com.tw/website/uploads_product/website_2/P0000200941020_1_1887631.jpg",
+        alt_text:"迪士尼",
+        place:"Taiwan",
+        Effective_period: 5,
+        size:["75x200",10,3,"30包"],
+        ingredient:"100% Primary pulp",
+        slogan:"紙選舒潔守護地球",
+    },{
+        name:"春風黃阿瑪袖珍包面紙",
+        imgsrc:"https://s.yimg.com/ut/api/res/1.2/9m79MRR_cg7sxS1hhEXVog--~B/YXBwaWQ9eXR3bWFsbDtjYz0zMTUzNjAwMDtoPTYwMDtxPTgxO3c9NjAw/https://s.yimg.com/fy/7a39/item/p0670169715068-item-c470xf4x0500x0500-m.jpg",
+        alt_text:"皇阿瑪",
+        place:"Taiwan",
+        Effective_period: 5,
+        size:["210x195",10,2,"30包"],
+        ingredient:"100% Primary pulp",
+        slogan:"衛生紙丟馬桶愛環境一起GO",
+        // value可以打 e.g.function() {
+        // console.log("這邊可以打文字");
+        // }
+    }];
+    console.log(tissue);
+    // 變數[位置].key值 找尋單一產品的單一物值
+    // tissue[0].size;
+    // 若遇函式則須輸入()
+    // tissue[1].slogan();
+
+    var size = tissue[2].size;
+    for (let index = 0; index < size.length; index++) {
+        const element = size[index];
+        console.log(element);
+    }
+    
+    var cards=document.querySelector(".cards");
+    for (let index = 0; index < tissue.length; index++) {
+        const tissues = tissue[index];
+        // 選擇所有的陣列
+
+        // 下面以innerHTML += `放入格式`
+        // +=表示原本格式加上新的陣列資訊
+        // 要更換的變數 ${const名稱.key名稱}
+        cards.innerHTML += `<div class="card">
+        <img class="img_size" src="${tissues.imgsrc}" alt="${tissues.alt_text}">
+                <div class="card_text">
+                <h2>${tissues.name}</h2>
+                <h3>產地:${tissues.place}<br>
+                有限年限: ${tissues.Effective_period}<br>
+                規格:${tissues.size} <br>
+                成分:${tissues.ingredient} <br>
+                標語:${tissues.slogan}</h3>
+
+                </div>
+                
+            </div>`;
+    console.log(tissues.sologan);
+    
+    }
+    </script>
+</body>
+</html>
