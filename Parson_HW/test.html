@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <!-- // Add google font -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+ <!-- // Add google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,6 +19,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
 
+  
 
   <!-- // Add font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
@@ -27,11 +28,9 @@
   * {
     box-sizing: border-box;
   }
-
-  body {
-    font-family: 'Noto Sans TC', sans-serif;
-  }
-
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+}
   .container {
     width: 1800px;
   }
@@ -104,7 +103,7 @@
 
   h4 {
     /* 18px */
-
+    
     text-align: center;
     font-size: 1.2rem;
     letter-spacing: .3rem;
@@ -139,80 +138,54 @@
     .col-gold-sm {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content:space-around;
     }
-
-    .col-gold-sm .text {
+    .col-gold-sm .text{
       padding: 50px 0;
     }
-
-    .qrcode {
-      width: 50%;
-      max-width: 150px;
-    }
-  }
-
-  .qrcode {
-    max-width: 150px;
+    .col-gold-sm .map{
+     width: 100%;
+    }  
   }
 
   .W-100 {
     width: 100%;
   }
 
-  #Aims span {
-    width: 500px;
-    height: 500px;
-  }
-
-  .group {
-    background-image: url("./img/group-01.jpg");
-    background-position: center;
-    background-size: contain;
-  }
-
-  .future {
-    background-image: url("./img/future.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
   /* 解鎖樣式 */
   .slide_box {
     width: 100%;
-    height: 38px;
+    height: 30px;
     text-align: center;
-    line-height: 38px;
+    line-height: 30px;
     font-size: 14px;
     color: #717171;
     background-color: #e8e8e8;
-    border-radius: 16px;
-  }
+    border-radius: 15px;
+}
 
-  .slide_xbox {
-    height: 38px;
+.slide_xbox {
+    height: 30px;
     text-align: center;
-    line-height: 38px;
+    line-height: 30px;
     font-size: 20px;
     color: rgb(26, 161, 202);
-    background-color: rgb(39, 37, 143);
-    position: absolute;
+    background-color:rgb(39, 37, 143);
+    position:absolute;
     box-sizing: border-box;
-    border-radius: 16px;
-  }
+    border-radius: 15px;
+}
 
-  .lock_btn {
+.lock_btn {
     cursor: pointer;
-    width: 38px;
+    width: 30px;
     float: right;
-    font-size: 30px;
-    color:#007bff;
-  }
+    font-size: 25px;    
+}
 
-  .lock_btn>.iconfont {
-    font-size: 16px;
-  }
-
+    .lock_btn > .iconfont {
+        font-size: 16px;
+    }
   footer {
     background-color: #e3f2fd;
   }
@@ -267,9 +240,13 @@
   <section id="banner">
     <div class="container-fluid swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide W-100" style=" background-image: url('./img/banner_auto.png')"></div>
-        <div class="swiper-slide"><img src="./img/banner_ee.jpg" alt="Electronic_Control"></div>
-        <div class="swiper-slide"><img src="./img/banner_auto.png" alt=""></div>
+        <div class="swiper-slide W-100" style=" background-image: url('./img/banner_auto.png')" ></div>
+        <div class="swiper-slide"><img
+            src="./img/banner_ee.jpg"
+            alt="Electronic_Control"></div>
+        <div class="swiper-slide"><img
+            src="./img/banner_auto.png"
+            alt=""></div>
 
       </div>
       <!-- Add Arrows -->
@@ -311,14 +288,14 @@
       <div class="row justify-content-center">
         <div class="col-md-3 col-10 m-1 card p-1">
           <div class="card-body">
-            <img class="w-100 card-img-top my-3" src="./img/program.png" alt="Program">
+            <img class="w-100 card-img-top my-3" src="./img/program.png" alt="Program">     
             <h4>程式規劃與設計</h4>
             <h6>根據業主的需求尋找合適之電控硬體與PLC，在撰寫與導入相關程式碼執行動作後，配對其人機介面，便於業主控管與操作。</h6>
           </div>
         </div>
 
         <div class="col-md-3 col-10 m-1 card text-center p-1">
-
+          
           <div class="card-body">
             <img class="w-100 card-img-top my-3" src="./img/配電盤.jpg" alt="Electronic_Control">
             <h4>電控規劃與製作</h4>
@@ -328,7 +305,7 @@
 
         <div class="col-md-3 col-10 card m-1 text-right p-1">
           <div class="card-body">
-            <img class="w-100 card-img-top my-3" src="./img/現場安裝維修.jpg" alt="Service">
+            <img class="w-100 card-img-top my-3" src="./img/現場安裝維修.jpg"  alt="Service">
             <h4>維護檢修</h4>
             <h6>若設備有需變更操作或故障，導致動作指令無法順利執行時，會依業主情況進行系統測試與調整。</h6>
           </div>
@@ -362,7 +339,7 @@
             公司找尋能搭配硬體之PLC，負責研發輸寫操作動作之程式碼並設計動作的執行順序，寫入相關硬體導入之步驟操作，各大品牌均有撰寫經驗。<br>人機介面選擇與PLC型號能夠連接對應之產品，設計出具美感且方便操作的畫面，以利於機台、設備上執行的動作。
           </h5>
         </div>
-
+        
       </div>
     </div>
   </section>
@@ -419,18 +396,18 @@
       <div class="row">
         <div class="col-md"></div>
         <div class="col-md-4 col-10 m-1">
-          <div class="card t1">
-            <div class="card-body a1">
-              <img src="./img/logo.png" class="card-img-top" alt="...">
-              <p class="card-text ">主要客群</p>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">主要客群</p>
             </div>
           </div>
         </div>
         <div class="col-md"></div>
         <div class="col-md-4 col-10 m-1">
-          <div class="card t2">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-              <img src="./img/logo.png" class="card-img-top" alt="...">
               <p class="card-text ">未來願景</p>
             </div>
           </div>
@@ -452,7 +429,7 @@
         <div class="col-gold-lg px-5">
           <form>
             <div class="form-row">
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6">
                 <label for="inputState">主旨</label>
                 <select id="inputState" class="form-control">
                   <option selected>想要聯絡，了解更多</option>
@@ -461,19 +438,19 @@
                   <option>我是廠商，想要合作</option>
                 </select>
               </div>
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6">
                 <label for="inputPassword4">姓名</label>
                 <input type="name" class="form-control" id="inputname4" placeholder="陳x明">
               </div>
             </div>
 
             <div class="form-row">
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6">
                 <label for="inputJob_title">任職單位&職稱</label>
                 <input type="text" class="form-control" id="inputJob_title" placeholder="xx單位 工程師">
 
               </div>
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6">
                 <label for="inputTime4">聯絡時間</label>
                 <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
                   <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
@@ -486,11 +463,11 @@
             </div>
 
             <div class="form-row">
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6">
                 <label for="inputPhone4">連絡電話</label>
                 <input type="phone" class="form-control" id="inputPhone4" placeholder="09xx-xxx-xxx">
               </div>
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6">
                 <label for="inputEmail4">電子信箱</label>
                 <input type="email" class="form-control" id="inputEmail4" placeholder="name@example.com">
                 <small id="emailHelp" class="form-text text-muted">我們不會將你的電子郵件分享給其他人</small>
@@ -517,26 +494,22 @@
           </form>
         </div>
         <div class="col-gold-sm">
-
-          <div class="text order-sm-2">
-            <img class="qrcode order-sm-1" src="./img/line qr-code.png" alt="LineQRCode">
-            <div class="contact">
-              <h3>
-                <i class="fas fa-phone-alt"></i>
-                04-22311719
-              </h3>
-              <h3>
-                <i class="fas fa-fax"></i>04-22380229
-              </h3>
-              <h3>
-                <i class="fas fa-at"></i>zh.cheng@msa.hinet.net
-              </h3>
-              <h3>
-                <i class="fas fa-map-marker-alt"></i>
-                台中市北屯區興安路一段104號
-              </h3>
-            </div>
-
+          <div class="text">
+            <h3>
+              <i class="fas fa-phone-alt"></i>
+              04-22311719
+            </h3>
+            <h3>
+              <i class="fas fa-fax"></i>04-22380229
+            </h3>
+            <h3>
+              <i class="fas fa-at"></i>zh.cheng@msa.hinet.net
+            </h3>
+            <h3>
+              <i class="fas fa-map-marker-alt"></i>
+              台中市北屯區興安路一段104號
+            </h3>
+            <img class="qrcode" src="./img/line qr-code.png" alt="LineQRCode" style="max-width: 200px;">
 
           </div>
           <div class="map my-3">
@@ -577,25 +550,6 @@
   <!-- Swiper JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
-  <!-- 換圖片 -->
-  <script>
-    $("#Aims .t1").hover(
-      function () {
-        $(this).append($('<span class="group"></span>'));
-
-      }, function () {
-        $(this).find("span").last().remove();
-      }
-    );
-    $("#Aims .t2").hover(
-      function () {
-        $(this).append($('<span class="future"></span>'));
-
-      }, function () {
-        $(this).find("span").last().remove();
-      }
-    );
-  </script>
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
@@ -620,104 +574,100 @@
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 
- <!-- 插入解鎖JS -->
- <script src='https://libs.baidu.com/jquery/1.10.2/jquery.min.js'></script>
- <script type="text/javascript">
-     var locked;
-     window.onload = function () {
-         slide();
-         
-     }
-     window.onresize = function () {
-         if (locked == true) {
-             var boxWidth = $('.slide_box').width();
-             $('.slide_xbox').width(boxWidth);
-         } else {
-             slide();
-         }
-     }
-     //滑動解鎖移動
-     function slide() {
-         var slideBox = $('.slide_box')[0];
-         var slideXbox = $('.slide_xbox')[0];
-         var btn = $('.lock_btn')[0];
-         var slideBoxWidth = slideBox.offsetWidth;
-         var btnWidth = btn.offsetWidth;
-         //pc端
-         btn.ondragstart = function () {
-             return false;
+  <!-- 插入解鎖JS -->
+  <script src='https://libs.baidu.com/jquery/1.10.2/jquery.min.js'></script>
+  <script type="text/javascript">
+      var locked;
+      window.onload = function () {
+          slide();
+          
+      }
+      window.onresize = function () {
+          if (locked == true) {
+              var boxWidth = $('.slide_box').width();
+              $('.slide_xbox').width(boxWidth);
+          } else {
+              slide();
+          }
+      }
+      //滑動解鎖移動
+      function slide() {
+          var slideBox = $('.slide_box')[0];
+          var slideXbox = $('.slide_xbox')[0];
+          var btn = $('.lock_btn')[0];
+          var slideBoxWidth = slideBox.offsetWidth;
+          var btnWidth = btn.offsetWidth;
+          //pc端
+          btn.ondragstart = function () {
+              return false;
+          };
+          btn.onselectstart = function () {
+              return false;
+          };
+          btn.onmousedown = function (e) {
+              var disX = e.clientX - btn.offsetLeft;
+              document.onmousemove = function (e) {
+                  var objX = e.clientX - disX + btnWidth;
+                  if (objX < btnWidth) {
+                      objX = btnWidth
+                  }
+                  if (objX > slideBoxWidth) {
+                      objX = slideBoxWidth
+                  }
+                  $('.slide_xbox').width(objX + 'px');
+              };
+              document.onmouseup = function (e) {
+                  var objX = e.clientX - disX + btnWidth;
+                  if (objX < slideBoxWidth) {
+                      objX = btnWidth;
+                  } else {
+                      objX = slideBoxWidth;
+                      locked = true;
+                      $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong" ></i></div>');
+                  }
+                  $('.slide_xbox').width(objX + 'px');
+                  document.onmousemove = null;
+                  document.onmouseup = null;
+              };
+          };
 
 
-         };
-         btn.onselectstart = function () {
-             return false;
-         };
-         btn.onmousedown = function (e) {
-             var disX = e.clientX - btn.offsetLeft;
-             document.onmousemove = function (e) {
-                 var objX = e.clientX - disX + btnWidth;
-                 if (objX < btnWidth) {
-                     objX = btnWidth
-                 }
-                 if (objX > slideBoxWidth) {
-                     objX = slideBoxWidth
-                 }
-                 $('.slide_xbox').width(objX + 'px');
-             };
-             document.onmouseup = function (e) {
-                 var objX = e.clientX - disX + btnWidth;
-                 if (objX < slideBoxWidth) {
-                     objX = btnWidth;
-                 } else {
-                     objX = slideBoxWidth;
-                     locked = true;
-                     $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong" style="color: #35b34a;"></i></div>');
-                     $('.lock_btn').css('background-color', '#cccccc)')
-                 }
-                 $('.slide_xbox').width(objX + 'px');
-                 document.onmousemove = null;
-                 document.onmouseup = null;
-             };
-         };
+          //移動端
+          var cont = $(".lock_btn");
+          var startX = 0, sX = 0, moveX = 0, leftX = 0;
+          cont.on({//绑定事件
+              touchstart: function (e) {
+                  startX = e.originalEvent.targetTouches[0].pageX;//獲取點擊點的x座標
+                  sX = $(this).offset().left;//x軸的偏移量
+                  leftX = startX - sX;//鼠標移動的最左端距離區塊左邊距離的位置
+              },
+              touchmove: function (e) {
+                  e.preventDefault();
+                  moveX = e.originalEvent.targetTouches[0].pageX;//移動過程中x座標
+                  var objX = moveX - leftX + btnWidth;
+                  if (objX < btnWidth) {
+                      objX = btnWidth
+                  }
+                  if (objX > slideBoxWidth) {
+                      objX = slideBoxWidth
+                  }
+                  $('.slide_xbox').width(objX + 'px');
+              },
+              touchend: function (e) {
+                  var objX = moveX - leftX + btnWidth;
+                  if (objX < slideBoxWidth) {
+                      objX = btnWidth;
+                  } else {
+                      objX = slideBoxWidth;
+                      locked = true;
+                      $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong" ></i></div>');
+                  }
+                  $('#slide_xbox').width(objX + 'px');
+              }
+          });
+      }
 
-
-         //移動端
-         var cont = $(".lock_btn");
-         var startX = 0, sX = 0, moveX = 0, leftX = 0;
-         cont.on({//绑定事件
-             touchstart: function (e) {
-                 startX = e.originalEvent.targetTouches[0].pageX;//獲取點擊點的x座標
-                 sX = $(this).offset().left;//x軸的偏移量
-                 leftX = startX - sX;//鼠標移動的最左端距離區塊左邊距離的位置
-             },
-             touchmove: function (e) {
-                 e.preventDefault();
-                 moveX = e.originalEvent.targetTouches[0].pageX;//移動過程中x座標
-                 var objX = moveX - leftX + btnWidth;
-                 if (objX < btnWidth) {
-                     objX = btnWidth
-                 }
-                 if (objX > slideBoxWidth) {
-                     objX = slideBoxWidth
-                 }
-                 $('.slide_xbox').width(objX + 'px');
-             },
-             touchend: function (e) {
-                 var objX = moveX - leftX + btnWidth;
-                 if (objX < slideBoxWidth) {
-                     objX = btnWidth;
-                 } else {
-                     objX = slideBoxWidth;
-                     locked = true;
-                     $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong" style="color: #35b34a;"></i></div>');
-                     $('.lock_btn').css('background-color', '#cccccc)')
-                 }
-                 $('#slide_xbox').width(objX + 'px');
-             }
-         });
-     }
-
- </script>
+  </script>
 </body>
 
 </html>
