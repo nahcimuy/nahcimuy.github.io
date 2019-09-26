@@ -27,7 +27,7 @@
 
  <!-- // Add font awesome -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
- <link rel="stylesheet" href="zh_cheng.scss">
+ <link rel="stylesheet" href="zh_cheng.css">
 </head>
 
 <body>
@@ -79,9 +79,9 @@
        <section class="banner">
         <div class="container-fluid swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"></div>
               <div class="swiper-slide banner_imgsrc1"></div>
               <div class="swiper-slide banner_imgsrc2"></div>
+              <div class="swiper-slide banner_imgsrc3"></div>
       
             </div>
             <!-- Add Arrows -->
@@ -103,10 +103,23 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
   integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
   crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
 <!-- Swiper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
 </body>
 
 </html>

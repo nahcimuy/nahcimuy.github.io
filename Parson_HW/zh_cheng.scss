@@ -9,17 +9,18 @@
   .container {
     width: 1440px;
   }
-.banner 
-  .swiper-container
-    .swiper-wrapper
+.banner {
+  .swiper-container{
+    .swiper-wrapper{
         .swiper-slide{
             width: 100%;
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
-            .banner_imgsrc1{
+            background-repeat: no-repeat;}
+        .banner_imgsrc1{
             background-image: url("./img/banner_auto.png");}
-            .banner_imgsrc2{
-                background-image: url('./img/banner_ee.jpg');
-              }
-        }
+        .banner_imgsrc2{
+            background-image: url("./img/banner_ee.jpg");}
+    }
+  }
+}        
