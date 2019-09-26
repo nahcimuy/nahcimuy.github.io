@@ -35,10 +35,15 @@
   .container {
     width: 1800px;
   }
-
+  #banner .banner_imgsrc1{
+  background-image: url('./img/banner_auto.png');
+}
+#banner .banner_imgsrc2{
+  background-image: url('./img/banner_ee.jpg');
+}
   @media(max-width: 1920px) {
     .container {
-      width: 80%;
+      width: 1140px;
     }
   }
 
@@ -131,6 +136,9 @@
   }
 
   @media(max-width: 1200px) {
+    .container {
+      width: 100%;
+    }
     .col-gold-lg {
       width: 100%;
       justify-content: center;
@@ -267,9 +275,9 @@
   <section id="banner">
     <div class="container-fluid swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide W-100" style=" background-image: url('./img/banner_auto.png')"></div>
-        <div class="swiper-slide"><img src="./img/banner_ee.jpg" alt="Electronic_Control"></div>
-        <div class="swiper-slide"><img src="./img/banner_auto.png" alt=""></div>
+        <div class="swiper-slide W-100"></div>
+        <div class="swiper-slide banner_imgsrc1"></div>
+        <div class="swiper-slide banner_imgsrc2"></div>
 
       </div>
       <!-- Add Arrows -->
@@ -282,7 +290,7 @@
   <section id="about" class="px-1 py-5">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-10 col-12">
           <h2>智緣
             <p class="little">公司簡介。經營理念</p>
           </h2>
@@ -298,7 +306,7 @@
   <section id="product" class="px-1 py-5">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-7">
+        <div class="col-md-7 col-12">
           <h2>丞現
             <p class="little">營業介紹</p>
           </h2>
@@ -310,7 +318,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-3 col-10 m-1 card p-1">
-          <div class="card-body">
+          <div class="card-body" data-toggle="collapse" href="#product_program">
             <img class="w-100 card-img-top my-3" src="./img/program.png" alt="Program">
             <h4>程式規劃與設計</h4>
             <h6>根據業主的需求尋找合適之電控硬體與PLC，在撰寫與導入相關程式碼執行動作後，配對其人機介面，便於業主控管與操作。</h6>
@@ -336,10 +344,10 @@
       </div>
     </div>
   </section>
-  <section id="product_program" class="px-1 py-5">
+  <section id="product_program" class="px-1 py-5 collapse">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-7 mb-4">
+        <div class="col-md-7 mb-4 col-12">
           <h2>程式規劃與設計
             <p class="little">硬體。品牌</p>
           </h2>
@@ -407,7 +415,7 @@
   <section id="Aims" class="px-1 py-5">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-10 col-12">
           <h2>目標
             <p class="little">主要客群。未來願景</p>
           </h2>
@@ -442,7 +450,7 @@
   <section id="contact" class=" px-1 py-5">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-10 col-12">
           <h2>聯繫
             <p class="little">聯絡資訊</p>
           </h2>
@@ -517,33 +525,33 @@
           </form>
         </div>
         <div class="col-gold-sm">
-
-          <div class="text order-sm-2">
-            <img class="qrcode order-sm-1" src="./img/line qr-code.png" alt="LineQRCode">
-            <div class="contact">
-              <h3>
-                <i class="fas fa-phone-alt"></i>
-                04-22311719
-              </h3>
-              <h3>
-                <i class="fas fa-fax"></i>04-22380229
-              </h3>
-              <h3>
-                <i class="fas fa-at"></i>zh.cheng@msa.hinet.net
-              </h3>
-              <h3>
-                <i class="fas fa-map-marker-alt"></i>
-                台中市北屯區興安路一段104號
-              </h3>
+          <div class="row d-flex flex-column">
+            <div class="text ">
+              <img class="qrcode" src="./img/line qr-code.png" alt="LineQRCode">
+              <div class="contact">
+                <h3>
+                  <i class="fas fa-phone-alt"></i>
+                  04-22311719
+                </h3>
+                <h3>
+                  <i class="fas fa-fax"></i>04-22380229
+                </h3>
+                <h3>
+                  <i class="fas fa-at"></i>zh.cheng@msa.hinet.net
+                </h3>
+                <h3>
+                  <i class="fas fa-map-marker-alt"></i>
+                  台中市北屯區興安路一段104號
+                </h3>
+              </div>
+              <div class="map my-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.119175224024!2d120.69035031435675!3d24.167552878630495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917e6e6165943%3A0x8d4045e464c7ad8!2z5pm65Lie5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1568563937178!5m2!1szh-TW!2stw"
+                width="80%" height="210" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
-
-
+            </div>
           </div>
-          <div class="map my-3">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.119175224024!2d120.69035031435675!3d24.167552878630495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917e6e6165943%3A0x8d4045e464c7ad8!2z5pm65Lie5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1568563937178!5m2!1szh-TW!2stw"
-              width="280" height="210" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          </div>
+            
         </div>
       </div>
 
@@ -552,10 +560,10 @@
   <footer id="footer">
     <div class="container">
       <div class="row p-3">
-        <div class="col-xl-9 ">
+        <div class="col-xl-9 col-12">
           © NAHCIMUY All rights reserved. 本網站僅供學術用，部分內容取自網路，如有侵權請告知
         </div>
-        <div class="col-xl-1">BACK
+        <div class="col-xl-1 col-2">BACK
 
         </div>
       </div>
