@@ -75,11 +75,12 @@
     height: 300px;
   }
 
+  .swiper-slide h5 {
+    color: #f0781e;
+  }
+
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    color: #f0781e;
-    background: #ccc;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -243,23 +244,29 @@
   .qrcode {
     max-width: 150px;
   }
-  #product_electronic .swiper-slide{
+
+  #product_electronic .swiper-slide {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
-  .electronic_imgsrc1{
-    background-image: url("");
+
+  .electronic_imgsrc1 {
+    background-image: url("./img/電路.jpg");
   }
-  .electronic_imgsrc2{
+
+  .electronic_imgsrc2 {
     background-image: url("./img/Circuit.png");
   }
-  .electronic_imgsrc3{
+
+  .electronic_imgsrc3 {
     background-image: url("./img/Box.jpg");
   }
-  .electronic_imgsrc4{
-    background-image: url("");
+
+  .electronic_imgsrc4 {
+    background-image: url("./img/現場試車.jpg");
   }
+
   .W-100 {
     width: 100%;
   }
@@ -460,21 +467,40 @@
             <h2>電控規劃與設計
               <p class="little">實際。圖片</p>
             </h2>
-            <h5>
-              <div class="text mb-4">以下為目前所繪製的配置圖、箱體圖、配線圖與配電盤(箱)之圖片</div>
-            </h5>
+
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-8">
             <!-- Swiper -->
+            <div class="swiper-container text mb-4" style="height: unset;">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                  <h5>以CAD繪製配線圖，顯示電路的實際使用的連線，
+                    讓客戶先初步了解配電盤中元件、線路、電源及訊號的連接。</h5>
+                </div>
+                <div class="swiper-slide">
+                  <h5>複雜的會有配置圖方便對照，若需訂製會另畫箱體圖給廠商訂製。</h5>
+                </div>
+                <div class="swiper-slide">
+                  <h5>將配電盤固定在電控箱後，協助控制箱於現場的定位及試車確認是否有順利執行動作。</h5>
+                </div>
+              </div>
+            </div>
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide electronic_imgsrc1">以下為目前所繪製的配置圖、箱體圖、配線圖與配電盤(箱)之圖片</div>
-                <div class="swiper-slide electronic_imgsrc2">以CAD繪製配線圖，顯示電路的實際使用的連線，
-                  讓客戶先初步了解配電盤中元件、線路、電源及訊號的連接。</div>
-                <div class="swiper-slide electronic_imgsrc3">複雜的會有配置圖方便對照，若需訂製會另畫箱體圖給廠商訂製。</div>
-                <div class="swiper-slide electronic_imgsrc4">將配電盤固定在電控箱後，協助控制箱於現場的定位及試車確認是否有順利執行動作。</div>
+                <div class="swiper-slide ">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-text">
+                        以下為目前所繪製的配置圖、箱體圖、配線圖與配電盤(箱)之圖片 </h5>
+                      <div class="electronic_imgsrc1"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide electronic_imgsrc2"></div>
+                <div class="swiper-slide electronic_imgsrc3"></div>
+                <div class="swiper-slide electronic_imgsrc4"></div>
 
               </div>
               <!-- Add Scrollbar -->
@@ -672,22 +698,32 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('#banner .swiper-container', {
       pagination: {
         el: '.swiper-pagination',
         dynamicBullets: true,
-      },
-    });
-  </script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      navigation: {
+      }, navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      }, autoplay: {
+        stopOnLastSlide: false,
       },
     });
   </script>
 
+  <script>
+    var swiper = new Swiper('#product_electronic  .swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      }, navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }, autoplay: {
+        stopOnLastSlide: false,
+      },
+    });
+  </script>
   <!-- Add Tempus Dominus -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
