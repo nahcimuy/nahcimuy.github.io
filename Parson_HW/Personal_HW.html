@@ -276,6 +276,100 @@
     height: 500px;
   }
 
+  #service{
+    position: relative;
+    width:100%;
+    min-height:55vw;
+    overflow: hidden;
+  }
+  
+  .layer{
+    position: absolute;
+    width:100vw;
+    min-height: 55vw;
+    overflow: hidden;
+  }
+  
+  .layer .content-wrap{
+    position: absolute;
+    width:100vw;
+    min-height: 55vw;
+  }
+  
+  .layer .content-body{
+    width:25%;
+    position:absolute;
+    top:50%;
+    text-align: center;
+    transform:translateY(-50%);
+    color:#fff;
+  }
+  
+  .layer h1{
+    font-size:6em;
+  }
+  
+  .bottom{
+    background:#ed3b56;
+    z-index:1;
+  }
+  
+  .bottom .content-body{
+    margin: auto;
+    width: 50%;
+  }
+  
+  .bottom h1{
+    width: 800px;
+    padding-left: 50px;
+    font-family: 'Bowlby One SC', cursive;
+    color:#fcfffe;
+  }
+  
+  .top{
+    background:#3a3192;
+    z-index:2;
+    width:50vw;
+  }
+
+  .top h1 {
+    font-family: 'Righteous', cursive;
+  }
+  
+  .top .content-body{
+    margin: auto;
+    width: 50%;
+  }
+  
+  .handle{
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: #fcfffe;
+    width:5px;
+    top:0;
+    left: 50%;
+    z-index:3;
+  }
+  
+  .skewed .handle{
+    top:50%;
+    transform:rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin:top;
+  }
+  
+  .skewed .top{
+    transform: skew(-30deg);
+    margin-left:-1000px;
+    width: calc(50vw + 1000px);
+  }
+  
+  .skewed .top .content-wrap{
+    transform: skew(30deg);
+    margin-left:1000px;
+  }
+
 
   /* 解鎖樣式 */
   .slide_box {
@@ -425,13 +519,16 @@
             <h6>與業主進行溝通並繪製電路圖確認配置後，製作配電盤(或電控箱)配線後，進行現場安裝試車，確認是否正常運作。</h6>
           </div>
         </div>
-        <div class="col-md-3 col-10 card my-1 text-right p-1">
-          <div class="card-body">
+
+        <div class="col-md-3 col-10 my-1 card p-1 accordion">
+          <div class="card-body" data-toggle="collapse" href="#service" aria-expanded="false"
+            aria-controls="product_program">
             <img class="w-100 card-img-top my-3" src="./img/現場安裝維修.jpg" alt="Service">
             <h4>維護檢修</h4>
             <h6>若設備有需變更操作或故障，導致動作指令無法順利執行時，會依業主情況進行系統測試與調整。</h6>
           </div>
         </div>
+        
       </div>
       <div id="product_program" class="py-5 collapse">
         <div class="row justify-content-center">
@@ -509,6 +606,7 @@
                         </div>
                       </div> 
                 </div>
+
               </div>
               <!-- Add Scrollbar -->
               <div class="swiper-scrollbar"></div>
@@ -517,6 +615,24 @@
         </div>
       </div>
     </div>
+    <section id="service" class="skewed collapse">
+      <div class="layer bottom">
+          <div class="content-wrap">
+              <div class="content-body">
+                  <h1>網路遠端調整</h1>
+              </div>
+          </div>
+
+          <div class="layer top">
+              <div class="content-wrap">
+                  <div class="content-body">
+                      <h1>現場試車調整</h1>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="handle"></div>
+  </section>
   </section>
 
   <section id="Aims" class="py-5">
@@ -731,6 +847,28 @@
       },
     });
   </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    let wrapper = document.getElementById('service');
+    let topLayer = wrapper.querySelector('.top');
+    let handle = wrapper.querySelector('.handle');
+    let skew = 0;
+    let delta = 0;
+
+    if (wrapper.className.indexOf('skewed') != -1) {
+        skew = 1000;
+    }
+
+    wrapper.addEventListener('mousemove', function (e) {
+        delta = (e.clientX - window.innerWidth / 2) * 0.5;
+
+        handle.style.left = e.clientX + delta + 'px';
+
+        topLayer.style.width = e.clientX + skew + delta + 'px';
+    });
+});
+</script>
+
   <!-- Add Tempus Dominus -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
