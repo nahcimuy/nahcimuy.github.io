@@ -36,15 +36,35 @@
   .container {
     width: 1800px;
   }
-
-  #banner .banner_imgsrc1 {
+  #banner .swiper-container{
+    width: 100%;
+    height: 700px;
+    background-color: powderblue;
+  }
+  #banner .banner_imgsrc1{ 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     background-image: url('./img/banner_auto.png');
   }
-
-  #banner .banner_imgsrc2 {
+  #banner .banner_imgsrc2{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     background-image: url('./img/banner_ee.jpg');
   }
-
+  #banner .banner_imgsrc3{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('./img/banner_auto.png');
+  }
+  #banner .banner_imgsrc4{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('./img/banner_ee.jpg');
+  }
   nav {
     position: fixed;
   }
@@ -60,10 +80,7 @@
     z-index: 5000;
   }
 
-  #banner .swiper-container {
-    width: 100%;
-    height: 700px;
-  }
+  
 
   #product_electronic .swiper-container {
     width: 100%;
@@ -133,24 +150,27 @@
     line-height: 1rem;
     color: #f0781e;
   }
-  @media(max-width: 1920px) {
+  @media(max-width: 768px) {
     .container {
-      width: 1140px;
+      width: 100%;
     }
     #banner .banner_imgsrc1 {
       width: 100%;
+      background-color: powderblue;
       background-repeat: no-repeat;
       background-size: contain;
       background-image: url('./img/programming.svg');
     }
   #banner .banner_imgsrc2 {
     width: 100%;
+    background-color: aliceblue;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./img/slot-machine.svg');
     }
   #banner .banner_imgsrc3{
     width: 100%;
+    background-color: powderblue;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./img/drone.svg');
@@ -158,6 +178,7 @@
 
   #banner .banner_imgsrc4{
     width: 100%;
+    background-color: aliceblue;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./img/laser-cutting-machine.svg');
@@ -184,11 +205,11 @@
   }
 
   .mobile .card:nth-child(1) .icon {
-    background: #6eadd4;
+    background: #4eafac;
   }
 
   .mobile .card:nth-child(2) .icon {
-    background: #4aada9;
+    background: #6eadd4;
   }
 
   .mobile .card:nth-child(3) .icon {
@@ -594,25 +615,16 @@
             <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">智緣</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              丞起
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">程式規劃與設計</a>
-              <a class="dropdown-item" href="#">電控規劃與製作</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">維護檢修</a>
-            </div>
+            <a class="nav-link" href="#about">智緣</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">目標</a>
+            <a class="nav-link" href="#product">呈現</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">聯繫</a>
+            <a class="nav-link" href="#Aims">目標</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">聯繫</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"></a>
@@ -623,7 +635,7 @@
   </nav>
 
   <section id="banner">
-    <div class="container-fluid swiper-container">
+    <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide banner_imgsrc1"></div>
         <div class="swiper-slide banner_imgsrc2"></div>
@@ -798,7 +810,7 @@
         </section>
       </div>
       <div class="d-block d-md-none mobile">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="program">
           <div class="card col-12">
             <div class="face face1">
               <div class="content">
@@ -882,7 +894,7 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="electronic">
           <div class="card col-10">
             <div class="face face1">
               <div class="content">
@@ -898,7 +910,22 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="electronic">
+          <div class="container-fluid swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide  electronic_imgsrc1"></div>
+              <div class="swiper-slide  electronic_imgsrc2"></div>
+              <div class="swiper-slide  electronic_imgsrc3"></div>
+              <div class="swiper-slide  electronic_imgsrc4"></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="row justify-content-center" id="service">
           <div class="card col-10">
             <div class="face face1">
               <div class="content">
