@@ -45,12 +45,6 @@
     background-image: url('./img/banner_ee.jpg');
   }
 
-  @media(max-width: 1920px) {
-    .container {
-      width: 1140px;
-    }
-  }
-
   nav {
     position: fixed;
   }
@@ -139,8 +133,40 @@
     line-height: 1rem;
     color: #f0781e;
   }
+  @media(max-width: 1920px) {
+    .container {
+      width: 1140px;
+    }
+    #banner .banner_imgsrc1 {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('./img/programming.svg');
+    }
+  #banner .banner_imgsrc2 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./img/slot-machine.svg');
+    }
+  #banner .banner_imgsrc3{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./img/drone.svg');
+    }
 
-
+  #banner .banner_imgsrc4{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./img/laser-cutting-machine.svg');
+  }
+  #banner .swiper-container {
+    width: 100%;
+    height: 375px;
+  }
+  }
   .mobile .card {
     position: relative;
     border: none;
@@ -182,12 +208,12 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(100px);
+    transform: translateY(0px);
   }
 
   .mobile .card:hover .face.face1 {
     background: #ff0057;
-    transform: translateY(50px);
+    transform: translateY(20px);
   }
 
   .mobile .card .face.face1 .content {
@@ -211,9 +237,13 @@
     align-items: center;
     padding: 25px 20px 5px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
+    transform: translateY(-150px);
   }
-
+  .mobile .card .face.face2 .content i {
+    font-size: 30px;
+    margin-top: 35px;
+    color: red;
+  }
   .mobile .card:hover .face.face2 {
     transform: translateY(0);
   }
@@ -274,7 +304,10 @@
     .container {
       width: 100%;
     }
-
+    .container  .text{
+      font-size: 16px;
+      letter-spacing: 1.2px;
+    } 
     .col-gold-lg {
       width: 100%;
       justify-content: center;
@@ -293,6 +326,9 @@
     .qrcode {
       width: 50%;
       max-width: 150px;
+    }
+    .contact h3{
+      font-size: 16px;
     }
   }
 /* 目標 */
@@ -589,10 +625,10 @@
   <section id="banner">
     <div class="container-fluid swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide W-100"></div>
         <div class="swiper-slide banner_imgsrc1"></div>
         <div class="swiper-slide banner_imgsrc2"></div>
-
+        <div class="swiper-slide banner_imgsrc3"></div>
+        <div class="swiper-slide banner_imgsrc4"></div>
       </div>
       <!-- Add Arrows -->
       <div class="swiper-button-next"></div>
@@ -610,8 +646,7 @@
           </h2>
           <h5>
             <div class="text">
-              公司於民國92年成立，將自身多年的實戰經驗，以電機整合做為主力目標，以電腦控制技術整合電子、機械技術幫助達到自動控制目的，以通訊系統控制與監測自動控制之情況。本公司以電機背景增進技術與服務品質要求，提供更完整，更全方位自動化及機電整合之服務，協助客戶達到智慧型控制與自動化
-              ，提昇客戶其生產效率及品質。</div>
+              公司於民國９２年成立，將自身多年的實戰經驗，以電機整合做為主力營業目標，以電腦控制技術整合電子、機械技術幫助達到自動控制目的，以通訊系統控制與監測自動控制之情況。本公司以電機背景增進技術與服務品質要求，提供更完整，更全方位自動化及機電整合之服務，協助客戶達到智慧型控制與自動化，提昇客戶其生產效率及品質。</div>
           </h5>
         </div>
       </div>
@@ -625,7 +660,7 @@
             <p class="little">營業介紹</p>
           </h2>
           <h5>
-            <div class="text mb-4">公司承接的工作項目以自動控制為主軸，當業主告知相關需求與預計時程時，會先評估其可行性，在溝通達到共識後進行作業，目前營業項目可分成三大方向
+            <div class="text mb-4">公司承接的工作項目以自動控制為主軸，當業主告知相關需求與預計時程時，會先評估其可行性，在溝通達到共識後進行作業，目前營業項目可分為以下三大方向。
             </div>
           </h5>
         </div>
@@ -762,109 +797,120 @@
           <div class="handle"></div>
         </section>
       </div>
-      <div class="d-block d-md-none mobile row">
-        <div class="card col-11">
-          <div class="face face1">
-            <div class="content">
-                <img class="icon" src="./img/programming.svg" alt="">
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <h4>程式規劃與設計</h4>
-              <h6>根據業主的需求尋找合適之電控硬體與PLC，在撰寫與導入相關程式碼執行動作後，配對其人機介面，便於業主控管與操作。</h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-11">
-          <div id="accordion" class="myaccordion">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                   電控軟體
-                    <span class="fa-stack fa-sm">
-                      <i class="fas fa-circle fa-stack-2x"></i>
-                      <i class="fas fa-minus fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                  <ul>
-                    <li>根據業主的需求，選擇或沿用合適啟動對應動作之相關電控硬體，常見電控硬體為無熔絲開關、伺服控制器、變頻驅動器等，以利動作與指令能夠執行。</li>
-                    
-                  </ul>
-                </div>
+      <div class="d-block d-md-none mobile">
+        <div class="row justify-content-center">
+          <div class="card col-12">
+            <div class="face face1">
+              <div class="content">
+                  <img class="icon" src="./img/programming.svg" alt="">
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    可程式控制器
-                    <span class="fa-stack fa-2x">
-                      <i class="fas fa-circle fa-stack-2x"></i>
-                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                  <ul>
-                    <li>公司找尋能搭配硬體之可程式控制器（簡稱PLC），負責研發輸寫操作動作之程式碼並設計動作的執行順序，寫入相關硬體導入之步驟操作，各大品牌均有撰寫經驗。</li>
-                   
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    人機介面
-                    <span class="fa-stack fa-2x">
-                      <i class="fas fa-circle fa-stack-2x"></i>
-                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  <ul>
-                    <li>人機介面選擇與PLC型號能夠連接對應之產品，設計出具美感且方便操作的畫面，以利於機台、設備上執行的動作。</li>
-                  </ul>
-                </div>
+            <div class="face face2">
+              <div class="content">
+                <h4>程式規劃與設計</h4>
+                <h6>根據業主的需求尋找合適之電控硬體與PLC，在撰寫與導入相關程式碼執行動作後，配對其人機介面，便於業主控管與操作。</h6>
+                <i class="fas fa-arrows-alt-v"></i>
               </div>
             </div>
           </div>
         </div>
-        <div class="card col-11">
-          <div class="face face1">
-            <div class="content">
-                <img class="icon" src="./img/electronicboard.svg" alt="">
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <h4>電控規劃與製作</h4>
-              <h6>根據業主的需求尋找合適之電控硬體與PLC，在撰寫與導入相關程式碼執行動作後，配對其人機介面，便於業主控管與操作。</h6>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div id="accordion" class="myaccordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     電控軟體
+                      <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-minus fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>根據業主的需求，選擇或沿用啟動對應動作之相關電控硬體，常見電控硬體為無熔絲開關、伺服控制器、變頻驅動器等等，促使動作與指令能夠執行。</li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      可程式控制器
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>公司找尋能搭配硬體之可程式控制器（簡稱PLC），負責研發輸寫操作動作之程式碼並設計動作的執行順序，寫入相關硬體導入之步驟操作，各大品牌均有撰寫經驗。</li>
+                     
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      人機介面
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>人機介面選擇與PLC型號能夠連接對應之產品，設計出具美感且方便操作的畫面，以利於機台、設備上執行的動作。</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="card col-11">
-          <div class="face face1">
-            <div class="content">
-              <img class="icon" src="./img/service.svg" alt="">
+        <div class="row justify-content-center">
+          <div class="card col-10">
+            <div class="face face1">
+              <div class="content">
+                  <img class="icon" src="./img/electronicboard.svg" alt="">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h4>電控規劃與製作</h4>
+                <h6>根據業主的需求尋找合適之電控硬體與PLC，在撰寫與導入相關程式碼執行動作後，配對其人機介面，便於業主控管與操作。</h6>
+                <i class="fas fa-arrows-alt-v"></i>
+              </div>
             </div>
           </div>
-          <div class="face face2">
-            <div class="content">
-              <h4>維護檢修</h4>
-              <h6>若設備有需變更操作或故障，導致動作指令無法順利執行時，會依業主情況進行系統測試與調整。</h6>
+        </div>
+        <div class="row justify-content-center">
+          <div class="card col-10">
+            <div class="face face1">
+              <div class="content">
+                <img class="icon" src="./img/service.svg" alt="">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h4>維護檢修</h4>
+                <h6>若設備有需變更操作或故障，導致動作指令無法順利執行時，會依業主情況進行系統測試與調整，主要分為現場試車與遠端遙控。</h6>
+                <i class="fas fa-arrows-alt-v"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -896,7 +942,7 @@
               <img src="./img/group.jpg" alt="" class="w-100">
             </div>
             <div class="down-card">
-              主要客群
+              主要客群 <i class="fas fa-angle-double-right"></i>
             </div>
           </div>
         </div>
@@ -907,7 +953,7 @@
               <img src="./img/future1.jpg" alt="" class="w-100">
             </div>
             <div class="down-card">
-              未來願景
+              未來願景 <i class="fas fa-angle-double-right"></i>
             </div>
           </div>
         </div>
@@ -928,7 +974,7 @@
         <div class="col-gold-lg px-5">
           <form>
             <div class="form-row">
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6 col-12">
                 <label for="inputState">主旨</label>
                 <select id="inputState" class="form-control">
                   <option selected>想要聯絡，了解更多</option>
@@ -937,19 +983,19 @@
                   <option>我是廠商，想要合作</option>
                 </select>
               </div>
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6 col-12">
                 <label for="inputPassword4">姓名</label>
                 <input type="name" class="form-control" id="inputname4" placeholder="陳x明">
               </div>
             </div>
 
             <div class="form-row">
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6 col-12">
                 <label for="inputJob_title">任職單位&職稱</label>
                 <input type="text" class="form-control" id="inputJob_title" placeholder="xx單位 工程師">
 
               </div>
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6 col-12">
                 <label for="inputTime4">聯絡時間</label>
                 <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
                   <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
@@ -962,11 +1008,11 @@
             </div>
 
             <div class="form-row">
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6 col-12">
                 <label for="inputPhone4">連絡電話</label>
                 <input type="phone" class="form-control" id="inputPhone4" placeholder="09xx-xxx-xxx">
               </div>
-              <div class="form-group col-md-6 col-10">
+              <div class="form-group col-md-6 col-12">
                 <label for="inputEmail4">電子信箱</label>
                 <input type="email" class="form-control" id="inputEmail4" placeholder="name@example.com">
                 <small id="emailHelp" class="form-text text-muted">我們不會將你的電子郵件分享給其他人</small>
@@ -1006,8 +1052,8 @@
                   <i class="fas mr-1 fa-fax"></i> 04-22380229
                 </h3>
                 <h3 class="d-sm-none d-flex">
-                  <i class="fab fa-line mr-1 "></i><a href="https://line.me/ti/p/Hq7dAVFNJh"
-                    style="text-decoration:none;"> zh80488720</a>
+                  <i class="fab fa-line mr-2 "></i><a href="https://line.me/ti/p/Hq7dAVFNJh"
+                    style="text-decoration:none; letter-spacing: 1.8px; line-height: 16px;"> zh80488720</a>
                 </h3>
                 <h3 class="d-flex">
                   <i class="fas mr-1 fa-at"></i><a href="mailto:zh.cheng@msa.hinet.net" style="text-decoration:none;">
