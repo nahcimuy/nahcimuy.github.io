@@ -32,9 +32,20 @@
   body {
     font-family: 'Noto Sans TC', sans-serif;
   }
-
   .container {
     width: 1800px;
+  }
+  nav {
+    position: fixed;
+  }
+  .fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+  }
+  #banner {
+    position: relative;
+    padding-top: 59px;
   }
   #banner .swiper-container{
     width: 100%;
@@ -65,23 +76,94 @@
     background-position: center;
     background-image: url('./img/banner_ee.jpg');
   }
-  nav {
-    position: fixed;
+  .layer {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
   }
 
-  #banner {
-    position: relative;
-    padding-top: 59px;
+  .layer .content-wrap {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
   }
 
-  .fixed {
-    position: fixed;
+  .layer .content-body {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #333;
+  }
+
+  .layer h1 {
+    font-size: 6em;
+  }
+
+  .bottom {
+    background: url("./img/on test.svg") ;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .bottom .content-body {
+    margin: auto;
     width: 100%;
-    z-index: 5000;
   }
 
-  
+  .bottom h1 {
+    width: 800px;
+    padding-left: 60px;
+    font-family: 'Bowlby One SC', cursive;
+    color: #050000;
+  }
 
+  .top {
+    background: url("./img/Remote connection-01.svg") #3333;
+    background-repeat: repeat;
+    z-index: 2;
+    width: 100vw;
+  }
+
+  .top h1 {
+    font-family: 'Righteous', cursive;
+  }
+
+  .top .content-body {
+    margin: auto;
+    width: 100%;
+  }
+
+  .handle {
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: #fcfffe;
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+  }
+
+  .skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 100%;
+    transform-origin: top;
+  }
+
+  .skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+  }
+
+  .skewed .top .content-wrap {
+    transform: skew(30deg);
+    margin-left: 1000px;
+  }
   #product_electronic .swiper-container {
     width: 100%;
     height: 300px;
@@ -119,7 +201,7 @@
   h3 {
     /* 30px */
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 25px;
     color: #007bff;
   }
 
@@ -352,6 +434,9 @@
       font-size: 16px;
     }
   }
+  .card-body:hover{
+    background-color: #cccccc;
+  }
 /* 目標 */
   .main-card {
     color: black;
@@ -427,7 +512,7 @@
   }
 
   .qrcode {
-    max-width: 150px;
+    max-width: 180px;
   }
 
   #product_electronic .swiper-slide {
@@ -468,94 +553,7 @@
     overflow: hidden;
   }
 
-  .layer {
-    position: absolute;
-    width: 100vw;
-    min-height: 55vw;
-    overflow: hidden;
-  }
-
-  .layer .content-wrap {
-    position: absolute;
-    width: 100vw;
-    min-height: 55vw;
-  }
-
-  .layer .content-body {
-    width: 25%;
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    transform: translateY(-50%);
-    color: #fff;
-  }
-
-  .layer h1 {
-    font-size: 6em;
-  }
-
-  .bottom {
-    background: #ed3b56;
-    z-index: 1;
-  }
-
-  .bottom .content-body {
-    margin: auto;
-    width: 50%;
-  }
-
-  .bottom h1 {
-    width: 800px;
-    padding-left: 50px;
-    font-family: 'Bowlby One SC', cursive;
-    color: #fcfffe;
-  }
-
-  .top {
-    background: #3a3192;
-    z-index: 2;
-    width: 50vw;
-  }
-
-  .top h1 {
-    font-family: 'Righteous', cursive;
-  }
-
-  .top .content-body {
-    margin: auto;
-    width: 50%;
-  }
-
-  .handle {
-    position: absolute;
-    height: 100%;
-    display: block;
-    background-color: #fcfffe;
-    width: 5px;
-    top: 0;
-    left: 50%;
-    z-index: 3;
-  }
-
-  .skewed .handle {
-    top: 50%;
-    transform: rotate(30deg) translateY(-50%);
-    height: 200%;
-    transform-origin: top;
-  }
-
-  .skewed .top {
-    transform: skew(-30deg);
-    margin-left: -1000px;
-    width: calc(50vw + 1000px);
-  }
-
-  .skewed .top .content-wrap {
-    transform: skew(30deg);
-    margin-left: 1000px;
-  }
-
-
+  
   /* 解鎖樣式 */
   .slide_box {
     width: 100%;
@@ -635,6 +633,24 @@
   </nav>
 
   <section id="banner">
+    <div class="skewed collapse">
+            <div class="layer bottom">
+              <div class="content-wrap">
+                <div class="content-body">
+                  <h1>網路遠端調整</h1>
+                </div>
+              </div>
+  
+              <div class="layer top">
+                <div class="content-wrap">
+                  <div class="content-body">
+                    <h1>現場試車調整</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="handle"></div>
+          </div>
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide banner_imgsrc1"></div>
@@ -682,7 +698,7 @@
           <div class="col-md-3 col-10 my-1 card p-1 accordion">
             <div class="card-body" data-toggle="collapse" href="#product_program" aria-expanded="false"
               aria-controls="product_program">
-              <img class="w-100 card-img-top my-3" src="./img/program.png" alt="Program">
+              <img class="w-100 card-img-top my-3" src="./img/program.svg" alt="Program">
               <h4>程式規劃與設計</h4>
               <h6>根據業主的需求尋找合適之電控硬體與PLC，在撰寫與導入相關程式碼執行動作後，配對其人機介面，便於業主控管與操作。</h6>
             </div>
@@ -690,7 +706,7 @@
           <div class="col-md-3 col-10 my-1 card p-1 accordion">
             <div class="card-body" data-toggle="collapse" href="#product_electronic" aria-expanded="false"
               aria-controls="product_electronic">
-              <img class="w-100 card-img-top my-3" src="./img/配電盤.jpg" alt="Program">
+              <img class="w-100 card-img-top my-3" src="./img/switchboard.png" alt="Program">
               <h4>電控規劃與製作</h4>
               <h6>與業主進行溝通並繪製電路圖確認配置後，製作配電盤(或電控箱)配線後，進行現場安裝試車，確認是否正常運作。</h6>
             </div>
@@ -699,7 +715,7 @@
           <div class="col-md-3 col-10 my-1 card p-1 accordion">
             <div class="card-body" data-toggle="collapse" href="#service" aria-expanded="false"
               aria-controls="service">
-              <img class="w-100 card-img-top my-3" src="./img/現場安裝維修.jpg" alt="Service">
+              <img class="w-100 card-img-top my-3" src="./img/Repair and maintenance.png" alt="Service">
               <h4>維護檢修</h4>
               <h6>若設備有需變更操作或故障，導致動作指令無法順利執行時，會依業主情況進行系統測試與調整。</h6>
             </div>
@@ -966,7 +982,7 @@
             <p>高端傳送電控技術軟體編寫需求者</p>
 
             <div class="up-card">
-              <img src="./img/group.jpg" alt="" class="w-100">
+              <img src="./img/group.svg" alt="" class="w-100">
             </div>
             <div class="down-card">
               主要客群 <i class="fas fa-angle-double-right"></i>
@@ -977,7 +993,7 @@
           <div class="main-card future">
 
             <div class="up-card">
-              <img src="./img/future1.jpg" alt="" class="w-100">
+              <img src="./img/future.svg" alt="" class="w-100">
             </div>
             <div class="down-card">
               未來願景 <i class="fas fa-angle-double-right"></i>
@@ -1094,7 +1110,7 @@
               <div class="map my-3">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.119175224024!2d120.69035031435675!3d24.167552878630495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917e6e6165943%3A0x8d4045e464c7ad8!2z5pm65Lie5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1568563937178!5m2!1szh-TW!2stw"
-                  width="100%" height="210" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
               </div>
             </div>
           </div>
@@ -1160,7 +1176,7 @@
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      let wrapper = document.getElementById('service');
+      let wrapper = document.getElementById('service','banner');
       let topLayer = wrapper.querySelector('.top');
       let handle = wrapper.querySelector('.handle');
       let skew = 0;
