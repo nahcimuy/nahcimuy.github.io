@@ -120,18 +120,18 @@
     color: #050000;
   }
 
-  .top {
+  #service .top {
     background: url("./img/Remote connection-01.svg") #3333;
     background-repeat: repeat;
     z-index: 2;
     width: 100vw;
   }
 
-  .top h1 {
+  #service .top h1 {
     font-family: 'Righteous', cursive;
   }
 
-  .top .content-body {
+  #service .top .content-body {
     margin: auto;
     width: 100%;
   }
@@ -207,7 +207,6 @@
 
   h4 {
     /* 18px */
-
     text-align: center;
     font-size: 1.2rem;
     letter-spacing: .3rem;
@@ -403,6 +402,16 @@
   margin-top: 10px;
   letter-spacing: 2px;
 }
+.col-gold-lg {
+    width: 61.8%;
+    justify-content: center;
+}
+
+.col-gold-sm {
+    width: 31.2%;
+    display: flex;
+    justify-content: space-around;
+}
   @media(max-width: 1200px) {
     .container {
       width: 100%;
@@ -445,6 +454,7 @@
     width: 200px;
     height: 200px;
     padding: 20px 30px;
+    margin: 20px 0;
     position: relative;
     top: 50%;
     left: 50%;
@@ -1099,8 +1109,8 @@
                     style="text-decoration:none; letter-spacing: 1.8px; line-height: 16px;"> zh80488720</a>
                 </h3>
                 <h3 class="d-flex">
-                  <i class="fas mr-1 fa-at"></i><a href="mailto:zh.cheng@msa.hinet.net" style="text-decoration:none;">
-                    zh.cheng@msa.hinet.net</a>
+                  <i class="fas mr-1 fa-at"></i><a href="mailto:zh.cheng@msa.hinet.net" style="text-decoration:none;letter-spacing: 2px;">
+                  zh.cheng@msa.hinet.net</a>
                 </h3>
                 <h3 class="d-flex">
                   <i class="fas mr-1 fa-map-marker-alt"></i>
@@ -1176,7 +1186,7 @@
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      let wrapper = document.getElementById('service','banner');
+      let wrapper = document.getElementById('service');
       let topLayer = wrapper.querySelector('.top');
       let handle = wrapper.querySelector('.handle');
       let skew = 0;
