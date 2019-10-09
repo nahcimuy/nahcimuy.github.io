@@ -1,0 +1,489 @@
+* {
+    box-sizing: border-box;
+    }
+body{
+    margin: 0;
+    }
+html{
+    scroll-behavior: smooth;
+    }
+
+#navbar{
+    width: 100%;
+    background-color:#ffffff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    }
+.logo{
+    height: 40px;
+    margin-right: auto;
+    }
+.icon{
+    display: none;
+}
+.hambergar{
+    display: flex;
+}
+.b01, .b02, .b03, .b04{
+    width: 120px;
+    text-align: center;
+    background-color: #5c3b11b7;
+    padding: 0;
+    margin-left: 10px;
+}
+h3{
+    margin: 0;
+}        
+.button{
+    border-radius: 60px; 
+    color:#f8f8f8d5;
+    font-size:20px;       
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration:none;
+    text-align: center;
+    line-height: 40px;
+    }
+.button:hover{
+    background-color: #f0c083;
+    color:#5f4b13d5;
+    font-size:20px;       
+    text-decoration:none;
+    text-align: center;
+    line-height: 40px;
+    }
+.name{
+    display: none;
+}
+.banner{
+    background-size: cover;
+    width: 100%;
+    margin:0px auto;
+    padding: 0 2px;
+    }
+.font1{
+    width: 100%;
+    background-image: url("./img/產品介紹-01.jpg");
+    
+    }   
+.font2{
+    width: 100%;
+    background-image: url("./img/最新消息-01.jpg");
+    }
+.text2{
+    width: 50%;
+    background-size:cover;
+    background-repeat:no-repeat;  
+    background-position: center;
+    margin: 0 10px;
+    padding: 5px;
+    font-size:56px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    line-height: 450px;
+    text-decoration: none;
+    color:rgb(43, 106, 148);
+}    
+#font3{
+    width: 350px;
+    height: 70px;
+    background-color:#896d55;
+    margin: auto;
+    color: azure;
+    font-size : 50px;
+    font-family: 'Caveat', cursive;
+    text-align:center;
+    line-height:70px;
+    }
+        
+.font{
+    width: 100%;
+    font-family: 'Kosugi Maru', sans-serif;
+    text-align:justify;
+    line-height: 27px;
+    letter-spacing: 3px;
+    padding: 10px;
+    margin:auto;
+    }
+.fsc{
+    font-size : 22px;
+    color:#833602;
+}
+.fst{
+    font-size : 26px;
+    color:#5f3213;}             
+
+.text{
+    width: 100%;
+    margin: auto;
+    padding:15px 5px ;
+    }
+.text3{
+    width: 90%;
+    margin: auto;
+    padding:15px 5px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+.font-img{
+    width: 30%;
+    padding: 10px;
+    background-color: azure;
+    }
+.img{
+    width: 100%;
+    margin: auto;
+    }    
+.narrative{
+    color:#896d55;
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align:justify;
+    padding: 10px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    }
+#img{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/底圖.jpg');
+    background-size : cover; 
+    background-attachment: fixed; 
+    }
+.img4{
+    width:40%;
+    }
+.phone{
+    display: none;
+}
+#opacity1{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.7;
+    padding-top:calc(50vh - 35px);
+    }
+#container{
+    padding: 5px;
+    background-color: #fcfdfd9d;
+    opacity: 0.8;
+    background-image: url('./img/底圖2.png');
+    margin: auto;
+    display: flex;
+    }
+#container2{
+    background-color: white;
+    padding: 10px;
+    display: flex;    
+}
+    
+#container3{
+    background-color: brown;
+    padding: 5px 0;
+    }
+.container{
+    max-width: 1140px;
+    margin: 0 auto;}
+
+#base1{
+    width: 100%;
+    padding: 100px 50px;
+    background-color: #f7e80f8c;
+    
+    display: flex;
+    }
+#base2{
+    width: 100%;
+    padding: 100px 50px;
+    background-color: #f7e80f5d;
+    background-size:cover;
+    background-repeat:no-repeat;  
+    background-position: center;
+    display: flex;
+        }
+.base{
+    width: 100%;
+    padding: 100px 50px;
+    background-image: url('./img/底圖3.png');
+    opacity: 0.7;
+    background-size:cover;
+    background-repeat:no-repeat;  
+    background-position: center;}
+#video{
+    width: 40%;
+    margin:0 calc(20% - 180px);
+    }
+.footer{
+    width: 100%;
+    background-color:#491212;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }   
+.ft{
+    font-size : 20px;
+    font-family:'Noto Sans TC', sans-serif; 
+    text-align:center;
+    padding: 20px;
+    letter-spacing: 5px;
+    margin: auto;
+    }    
+.button2{
+    height: 60px;
+    background-color:#c52e2e;
+    border: 1px solid brown;
+    border-radius: 30px;
+    color:#e9c1c1;
+    font-size:15px;       
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    text-align: justify;
+    line-height: 60px;
+    margin-right: 10px;
+    }   
+@media(max-width:991px){
+#navbar{
+    width: 100%;
+    background-color:#ffffff;
+    padding: 10px;
+    display: block;    
+}.banner{
+    width: 100%;
+    margin:0px auto;
+    padding: 0 2px;
+    }
+.logo{
+    height: 40px;
+    margin:auto ;
+    display: block;
+    }
+.icon {
+    font-size: 50px;
+    height: min-content;
+    color: #f0c083;
+    text-align: center;
+    line-height: 20PX;
+    padding: unset;
+    display:block;
+    position: absolute;
+    top: 2px;
+    right:10px;
+    }
+.hambergar{
+    width: 120px;
+    display: none;
+}
+h3{
+    margin: 1px 0;
+}
+.b01, .b02, .b03, .b04{
+    width: 120px;
+    background-color: #5c3b11b7;
+    padding:unset;
+    margin-left:unset;
+}        
+.button{
+    border-radius: 50px; 
+    color:#f8f8f8d5;
+    font-size:20px;       
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration:none;
+    text-align: center;
+    line-height: 40px;
+    }
+
+
+#navbar:hover .hambergar{
+    display: block;
+    padding: unset;
+    margin-left: auto;
+    position: absolute;
+    line-height: 40px;
+    top: 60px;
+    right: 0;
+}
+.font1{
+    background-image: url("./img/產品介紹-01.jpg");
+    
+    }   
+.font2{
+    background-image: url("./img/最新消息-01.jpg");
+    }
+.text2{
+    width: 90%;
+    background-size:cover;
+    background-repeat:no-repeat;  
+    background-position: center;
+    margin: 0 auto;
+    padding: 5px;
+    font-size:70px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    line-height: 300px;
+    text-decoration: none;
+    color:#8d2f2f;
+}    
+#font3{
+    width: 350px;
+    height: 70px;
+    background-color:#896d55;
+    margin: auto;
+    color: azure;
+    font-size : 50px;
+    font-family: 'Caveat', cursive;
+    text-align:center;
+    line-height:70px;
+    }
+        
+.font{
+    width: 100%;
+    font-family: 'Kosugi Maru', sans-serif;
+    text-align:justify;
+    line-height: 40px;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin:auto;
+    }
+.fsc{
+    font-size : 25px;color:#9b5120;}
+.fst{
+    font-size : 33px;
+    color: #c48650ce;
+    font-weight: bolder;
+    text-align: center;
+    background-color: antiquewhite;
+    }             
+.t1{
+    background-color: #ffffff96
+}
+.text{
+    width: 100%;
+    margin: auto;
+    padding:15px 5px;
+    }
+.text3{
+    width: 95%;
+    margin: auto;
+    padding:15px 0;
+    display: block;
+    }
+
+.font-img{
+    width: 100%;
+    padding: 10px;
+    background-color: unset;
+    }
+.img{
+    width: 95%;
+    margin: 0 2%;
+    }    
+.narrative{
+    color:#896d55;
+    font-size : 35px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align:justify;
+    padding: 10px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    background-color: burlywood;
+    }
+#img{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/底圖.jpg');
+    background-size : cover; 
+    background-attachment: fixed; 
+    }
+.img4{
+    display: none;
+    }
+.phone{
+    width: 100%;
+    margin: 0 auto;
+    display:block;
+    }
+#opacity1{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.7;
+    padding-top:calc(50vh - 35px);
+    }
+#container{
+    padding: 5px;
+    background-color: #fcfdfd9d;
+    opacity: 1;
+    background-image: url('./img/底圖2.png');
+    margin: auto;
+    display: block;
+    }
+#container2{
+    background-color: white;
+    padding: 10px;
+    display: block;    
+}
+    
+#container3{
+    background-color: brown;
+    padding: 5px 0;
+    }
+.container{
+    max-width: 1140px;
+    margin: 0 auto;}
+
+#base1{
+    background-color: #f7e80f8c;
+    background-image: url('./img/底圖3.png');
+    opacity: 1;
+    background-size:cover;
+    background-repeat:no-repeat;  
+    background-position: center;
+    display: block;
+    }
+#base2{
+    background-color: #f7e80f5d;
+    background-size:cover;
+    background-repeat:no-repeat;  
+    background-position: center;
+    display: block;
+        }
+.base{
+    width: 100%;
+    padding: 100px 50px;
+    }
+#video{
+    width: 95%;
+    margin:0 calc(50% - 180px);
+    }
+.footer{
+    width: 100%;
+    background-color:#491212;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }   
+.ft{
+    font-size : 20px;
+    font-family:'Noto Sans TC', sans-serif; 
+    text-align:center;
+    padding: 20px;
+    letter-spacing: 5px;
+    margin: auto;
+    }    
+.button2{
+    height: 60px;
+    background-color:#c52e2e;
+    border: 1px solid brown;
+    border-radius: 30px;
+    color:#e9c1c1;
+    font-size:15px;       
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    text-align: justify;
+    line-height: 60px;
+    margin-right: 10px;
+    }   
+}
