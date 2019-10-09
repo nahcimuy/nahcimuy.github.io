@@ -10,6 +10,65 @@
     <title>Document</title>
 </head>
 <style>
+    .container{
+        width: 960px;
+    }
+    .group {
+        width: 100%;
+        padding: 5px;
+        top: 150px;
+        z-index: 100;
+        position: absolute;
+        display: flex;
+    }
+    .cards {
+        width: 100%;
+        padding: 20px;
+        margin: 0 50px;
+       
+        display: block;
+        z-index: 100;
+    }
+    .imgsrc1{
+        height: 200px;
+        background-image: url("./wooden door.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .imgsrc2{
+        height: 200px;
+        background-image: url("./zhcheng.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .imgsrc1:hover,.imgsrc2:hover,.imgsrc3:hover{
+        background-image: unset;
+        background-color: salmon;
+    }
+    .card {
+        width: 100%;
+    }
+    .cards .text {
+        display: none;
+    }
+    .cards:hover .text {
+        width: 100%;
+        padding: 5px;
+        display: block;
+        
+    }
+    h3 {
+        font-size: 14px;
+        margin: 0;
+        }
+    .d-none {
+        display: block;
+    }
+
+    .d-block {
+        display: none;
+    }
+
     :root {
         --c_bg: #fff;
         --c_00: #757474;
@@ -72,7 +131,7 @@
         place-content: center;
         text-align: center;
     }
-
+    
     .c-1::before {
         background-color: var(--c_01);
     }
@@ -296,41 +355,7 @@
         right: 0;
     }
 
-    .group {
-        width: 100%;
-        padding: 5px;
-        top: 150px;
-        z-index: 100;
-        position: absolute;
-        display: flex;
-    }
-
-    .cards {
-        width: 100%;
-        padding: 20px;
-        margin: 0 50px;
-        background-color: blueviolet;
-        display: block;
-        z-index: 100;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .text {
-        width: 100%;
-        display: block;
-    }
-
-    .d-none {
-        display: block;
-    }
-
-    .d-block {
-        display: none;
-    }
-
+    
     @media(max-width:768px) {
         .d-none {
             display: none;
@@ -387,29 +412,27 @@
 </style>
 
 <body>
-    <div class="d-none">
+    <div class="d-none container">
         <div class="group">
-            <div class="cards">
-                <div class="card"></div>
+            <div class="cards imgsrc1">
                 <div class="text">
                     <h3>木門咖啡</h3>
-                    <p>整體色調選用暖棕系，營造店家「自然」、「舒適」的氛圍，在重點凸顯的地方，以動畫吸引使用者目光，且以素人與報章言論感受，增加店家良好形象，找到想要在吵鬧喧嘩的都市中，一席溫暖放鬆的天地。</p>
+                    <p>整體色調選用暖棕系，營造店家「自然」、「舒適」的氛圍，在重點凸顯的地方，以動畫吸引使用者目光，且以素人與報章言論感受，增加店家良好形象，找到想要在吵鬧喧嘩的都市中，一席溫暖放鬆的天地。
+                    <a href="https://woodendoorcafe.github.io/">Link</a></p>
                 </div>
             </div>
-            <div class="cards">
-                <div class="card"></div>
+            <div class="cards imgsrc2">
                 <div class="text">
-                        <h3>智丞有限公司</h3>
-                        <p>公司本身營運十餘年，但並無使用網路曝光與推廣，考量現今資訊多有網路瀏覽，故規劃網頁增強曝光，整體使用淺藍色作為基點色，並使用圖像與文字展現營業項目，留下表單與聯絡資訊做媒介。
-                        </p>
+                    <h3>智丞有限公司</h3>
+                    <p>公司本身營運十餘年，但並無使用網路曝光與推廣，考量現今資訊多有網路瀏覽，故規劃網頁增強曝光，整體使用淺藍色作為基點色，並使用圖像與文字展現營業項目，留下表單與聯絡資訊做媒介。
+                            <a href="https://nahcimuy.github.io/Parson_HW/Personal_HW.html">Link</a></p>
                 </div>
             </div>
-            <div class="cards">
-                <div class="card"></div>
+            <div class="cards imgsrc3">
                 <div class="text">
-                        <h3>Sumikko Gurashi</h3>
-                        <p>將卡通人物做簡單介紹，並試著匯入影片及連結，供大家瞭解，網頁是自己刻板在不同畫面利用media做出響應式版型設計，背景與選色上較舒適與溫暖，並套用不同動畫效果，使網頁效果比較活潑。
-                        </p>
+                    <h3>Sumikko Gurashi</h3>
+                    <p>將卡通人物做簡單介紹，並試著匯入影片及連結，供大家瞭解，網頁是自己刻板在不同畫面利用media做出響應式版型設計，背景與選色上較舒適與溫暖，並套用不同動畫效果，使網頁效果比較活潑。
+                    </p>
                 </div>
             </div>
         </div>
