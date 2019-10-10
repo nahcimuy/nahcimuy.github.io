@@ -61,29 +61,28 @@ h3{
     margin:0px auto;
     padding: 0 2px;
     }
+
 .font1{
     width: 100%;
-    background-image: url("./img/產品介紹-01.jpg");
-    
-    }   
-.font2{
-    width: 100%;
-    background-image: url("./img/最新消息-01.jpg");
-    }
-.text2{
+    }  
+.text1{
     width: 50%;
-    background-size:cover;
-    background-repeat:no-repeat;  
-    background-position: center;
     margin: 0 10px;
+    padding: 5px;
+    position: relative;
+}
+.text2{
     padding: 5px;
     font-size:56px;
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
-    line-height: 450px;
     text-decoration: none;
     color:rgb(43, 106, 148);
-}    
+    position: absolute;
+    top: calc(50% - 41px);
+    left: calc(50% - 112px);
+}
+     
 #font3{
     width: 350px;
     height: 70px;
@@ -214,6 +213,10 @@ h3{
     width: 40%;
     margin:0 calc(20% - 180px);
     }
+iframe{
+    width:360px; 
+    height:183px;
+}
 .footer{
     width: 100%;
     background-color:#491212;
@@ -304,29 +307,23 @@ h3{
     top: 60px;
     right: 0;
 }
-.font1{
-    background-image: url("./img/產品介紹-01.jpg");
-    
-    }   
-.font2{
-    background-image: url("./img/最新消息-01.jpg");
-    }
+.text1{
+    width: 95%;
+    position: relative;
+}
 .text2{
-    width: 90%;
-    background-size:cover;
-    background-repeat:no-repeat;  
-    background-position: center;
-    margin: 0 auto;
-    padding: 5px;
-    font-size:70px;
+    font-size:40px;
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
-    line-height: 300px;
     text-decoration: none;
     color:#8d2f2f;
-}    
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 85px);
+   }
+
 #font3{
-    width: 350px;
+    width: 300px;
     height: 70px;
     background-color:#896d55;
     margin: auto;
@@ -338,18 +335,20 @@ h3{
     }
         
 .font{
-    width: 100%;
+    width: 90%;
     font-family: 'Kosugi Maru', sans-serif;
     text-align:justify;
     line-height: 40px;
     letter-spacing: 1px;
-    padding: 10px;
+    padding: unset;
     margin:auto;
     }
 .fsc{
-    font-size : 25px;color:#9b5120;}
+    font-size : 18px;
+    color:#9b5120;
+}
 .fst{
-    font-size : 33px;
+    font-size : 20px;
     color: #c48650ce;
     font-weight: bolder;
     text-align: center;
@@ -381,35 +380,36 @@ h3{
     }    
 .narrative{
     color:#896d55;
-    font-size : 35px;
+    font-size : 15px;
     font-family: 'Noto Sans JP', sans-serif;
     text-align:justify;
     padding: 10px;
     line-height: 40px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     background-color: burlywood;
     }
 #img{
     width: 100%;
-    height: 100vh;
+    height: 40vh;
     background-image: url('./img/底圖.jpg');
-    background-size : cover; 
+    background-size : contain;
+    background-repeat: no-repeat; 
     background-attachment: fixed; 
     }
 .img4{
     display: none;
     }
 .phone{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display:block;
     }
 #opacity1{
     width: 100%;
-    height: 100vh;
+    height: 40vh;
     background-color: white;
     opacity: 0.7;
-    padding-top:calc(50vh - 35px);
+    padding-top: calc(25vh - 95px);
     }
 #container{
     padding: 5px;
@@ -430,10 +430,12 @@ h3{
     padding: 5px 0;
     }
 .container{
-    max-width: 1140px;
-    margin: 0 auto;}
+    width: 95%;
+    margin: 0 auto;
+}
 
 #base1{
+    padding: 20px 0;
     background-color: #f7e80f8c;
     background-image: url('./img/底圖3.png');
     opacity: 1;
@@ -443,38 +445,42 @@ h3{
     display: block;
     }
 #base2{
+    padding: 20px 30px;
     background-color: #f7e80f5d;
     background-size:cover;
-    background-repeat:no-repeat;  
-    background-position: center;
     display: block;
         }
 .base{
     width: 100%;
-    padding: 100px 50px;
+    padding: 94px 50px;
     }
 #video{
     width: 95%;
-    margin:0 calc(50% - 180px);
+    margin:0 0 0 calc(50% - 120px);
     }
+iframe{
+    width:240px; 
+    height:122px;
+}
 .footer{
     width: 100%;
     background-color:#491212;
     color:white;
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 0;
     }   
 .ft{
-    font-size : 20px;
+    font-size : 10px;
     font-family:'Noto Sans TC', sans-serif; 
     text-align:center;
-    padding: 20px;
+    padding: 5px 10px;
     letter-spacing: 5px;
     margin: auto;
     }    
 .button2{
-    height: 60px;
+    height: 40px;
     background-color:#c52e2e;
     border: 1px solid brown;
     border-radius: 30px;
@@ -482,8 +488,8 @@ h3{
     font-size:15px;       
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
-    text-align: justify;
-    line-height: 60px;
-    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 0 10px;
     }   
 }
