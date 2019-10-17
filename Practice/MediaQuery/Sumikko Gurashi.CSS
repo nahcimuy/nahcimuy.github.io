@@ -259,51 +259,6 @@ iframe{
     margin:auto ;
     display: block;
     }
-.icon {
-    font-size: 50px;
-    height: min-content;
-    color: #f0c083;
-    text-align: center;
-    line-height: 20PX;
-    padding: unset;
-    display:block;
-    position: absolute;
-    top: 2px;
-    right:10px;
-    }
-.hambergar{
-    width: 120px;
-    display: none;
-}
-h3{
-    margin: 1px 0;
-}
-.b01, .b02, .b03, .b04{
-    width: 120px;
-    background-color: #5c3b11b7;
-    padding:unset;
-    margin-left:unset;
-}        
-.button{
-    border-radius: 50px; 
-    color:#f8f8f8d5;
-    font-size:20px;       
-    font-family: 'Josefin Sans', sans-serif;
-    text-decoration:none;
-    text-align: center;
-    line-height: 40px;
-    }
-
-
-#navbar:hover .hambergar{
-    display: block;
-    padding: unset;
-    margin-left: auto;
-    position: absolute;
-    line-height: 40px;
-    top: 60px;
-    right: 0;
-}
 
 /* 外掛版頭 */
 .menu-toggle {
@@ -315,19 +270,19 @@ h3{
   cursor: pointer;
 }
 .menu-toggle.on .one {
-  -moz-transform: rotate(45deg) translate(7px, 7px);
-  -ms-transform: rotate(45deg) translate(7px, 7px);
-  -webkit-transform: rotate(45deg) translate(7px, 7px);
-  transform: rotate(45deg) translate(7px, 7px);
+  -moz-transform: rotate(45deg) translate(5px, 6px);
+  -ms-transform: rotate(45deg) translate(5px, 6px);
+  -webkit-transform: rotate(45deg) translate(5px, 6px);
+  transform: rotate(45deg) translate(5px, 6px);
 }
 .menu-toggle.on .two {
   opacity: 0;
 }
 .menu-toggle.on .three {
-  -moz-transform: rotate(-45deg) translate(8px, -10px);
-  -ms-transform: rotate(-45deg) translate(8px, -10px);
-  -webkit-transform: rotate(-45deg) translate(8px, -10px);
-  transform: rotate(-45deg) translate(10px, -12px);
+  -moz-transform: rotate(-45deg) translate(12px, -14px);
+  -ms-transform: rotate(-45deg) translate(12px, -14px);
+  -webkit-transform: rotate(-45deg) translate(12px, -14px);
+  transform: rotate(-45deg) translate(12px, -14px);
 }
 
 .one,
@@ -369,7 +324,7 @@ nav li{
     margin: unset;
     text-align: center;
     width: unset;
-    background-color: #5c3b11b7;
+    background-color: unset;
     color: aliceblue;
     line-height: 50px;
     border-radius: unset;
