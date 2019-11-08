@@ -4,15 +4,15 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Noto+Sans+TC|Share+Tech+Mono&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet"  type="text/css" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>collection</title>
+    <link rel="stylesheet"  type="text/css" href="./index.css">
 </head>
-<style>
+<!-- <style>
     body {
         width: 100%;
         margin: 0;
@@ -152,7 +152,7 @@
             display: unset;
         }
     }
-</style>
+</style> -->
 
 <body>
     <div class="d-none container">
@@ -183,7 +183,7 @@
     </div>
     <div class="d-block swiper-container">
         <div class="swiper-wrapper">
-            <div class="cards swiper-slide">
+            <div class="swiper-slide">
                 <div class="imgsrc1"></div>
                 <div class="text">
                     <h3>木門咖啡</h3>
@@ -232,6 +232,11 @@
                 stopOnLastSlide: false,
             },
         });
+    </script>
+    <script>
+    if ('ontouchstart' in document) {
+    Y.one('body').removeClass('imgsrc1','imgsrc2','imgsrc3');
+}
     </script>
 </body>
 

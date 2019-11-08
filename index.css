@@ -10,11 +10,12 @@ body {
   display: block;
 }
 
-.d-none .container {
-  width: 960px;
+.container {
+  max-width: 1024px;
+  width: 80%;
 }
 
-.d-none .container .group {
+.container .group {
   width: 100%;
   padding: 5px;
   top: 150px;
@@ -24,49 +25,66 @@ body {
   display: flex;
 }
 
-.d-none .container .group .cards {
+.container .group .imgsrc1 {
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+  background-image: url("./wooden door.png");
+}
+
+.container .group .imgsrc2 {
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+  background-image: url("./zhcheng.png");
+}
+
+.container .group .imgsrc3 {
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+  background-image: url("./Sumikko Gurashi.png");
+}
+
+.container .group .imgsrc1:hover,
+.container .group .imgsrc2:hover,
+.container .group .imgsrc3:hover {
+  background-image: unset;
+  background-color: salmon;
+}
+
+.container .group .cards {
   width: 100%;
   padding: 20px;
   margin: 0 50px;
   display: block;
 }
 
-.d-none .container .group .cards text {
+.container .group .cards .text {
   display: none;
 }
 
-.d-none .container .group .cards:hover .text {
+.container .group .cards:hover .text {
   width: 100%;
   padding: 5px;
   display: block;
 }
 
-.d-none .container .group .imgsrc1 {
-  height: 200px;
-  background-image: url("./wooden door.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+.container .group .cards:hover .text h3 {
+  font-size: 18px;
+  margin: 5px 0;
 }
 
-.d-none .container .group .imgsrc2 {
-  height: 200px;
-  background-image: url("./zhcheng.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+.container .group .cards:hover .text p {
+  font-size: 16px;
+  margin: 0 0 5px;
 }
 
-.d-none .container .group .imgsrc3 {
-  height: 200px;
-  background-image: url("./Sumikko Gurashi.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.d-none .container .group .imgsrc1:hover,
-.d-none .container .group .imgsrc2:hover,
-.d-none .container .group .imgsrc3:hover {
-  background-image: unset;
-  background-color: salmon;
+.d-block {
+  display: none;
 }
 
 @media (max-width: 500px) {
@@ -76,32 +94,18 @@ body {
   .d-block {
     display: block;
   }
-  .d-block .swiper-container {
+  .swiper-container {
     width: 100vw;
-    position: absolute;
-    top: 150px;
-    left: 5%;
-  }
-  .d-block .swiper-container .cards {
-    width: 100%;
-  }
-  .d-block .swiper-container .cards .text {
-    display: none;
-  }
-  .d-block .swiper-container .cards:hover .text {
-    width: 100%;
+    margin: 50px 0;
     padding: 5px;
-    display: block;
   }
-  .d-block .swiper-container .cards:hover .text h3 {
-    font-size: 14px;
-    color: #f0781e;
-    margin: 0;
+  .swiper-container .swiper-wrapper {
+    width: 90%;
   }
-  .d-block .swiper-container .swiper-slide {
+  .swiper-container .swiper-wrapper .swiper-slide {
     padding: 5px;
     background-color: burlywood;
-    width: 280px !important;
+    width: 100% !important;
     text-align: center;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -114,12 +118,56 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: flex-end;
-    margin: 0 28px;
+    margin: 0 30px;
   }
-  .d-block .swiper-container .swiper-slide .imgsrc1:hover,
-  .d-block .swiper-container .swiper-slide .imgsrc2:hover,
-  .d-block .swiper-container .swiper-slide .imgsrc3:hover {
-    display: unset;
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc1 {
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-image: url("./wooden door.png");
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc2 {
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-image: url("./zhcheng.png");
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc3 {
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-image: url("./Sumikko Gurashi.png");
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc1:hover,
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc2:hover,
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc3:hover {
+    display: none;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .text {
+    display: none;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc1:hover .text,
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc2:hover .text,
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc3:hover .text {
+    width: 100%;
+    padding: 5px;
+    display: block;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc1:hover .text h3,
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc2:hover .text h3,
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc3:hover .text h3 {
+    font-size: 18px;
+    color: #f0781e;
+    margin: 5px 0;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc1:hover .text p,
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc2:hover .text p,
+  .swiper-container .swiper-wrapper .swiper-slide .imgsrc3:hover .text p {
+    font-size: 16px;
+    margin: 0 0 5px;
   }
 }
 /*# sourceMappingURL=index.css.map */
