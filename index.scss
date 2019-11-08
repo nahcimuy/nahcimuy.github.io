@@ -1,0 +1,124 @@
+body {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.d-none {
+    display: block;
+    .container {
+    width: 960px;
+    .group {
+    width: 100%;
+    padding: 5px;
+    top: 150px;
+    position: absolute;
+    display: flex;
+    .cards {
+    width: 100%;
+    padding: 20px;
+    margin: 0 50px;
+    display: block;
+    text {
+    display: none;
+    }
+}
+.cards:hover .text {
+    width: 100%;
+    padding: 5px;
+    display: block;
+
+}
+
+.imgsrc1 {
+    height: 200px;
+    background-image: url("./wooden door.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imgsrc2 {
+    height: 200px;
+    background-image: url("./zhcheng.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.imgsrc3 {
+    height: 200px;
+    background-image: url("./Sumikko Gurashi.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imgsrc1:hover,
+.imgsrc2:hover,
+.imgsrc3:hover {
+    background-image: unset;
+    background-color: salmon;
+}
+    }
+}
+}
+
+@media(max-width:500px) {
+     .d-none{
+    display: none;
+    }
+    .d-block {
+        display: block;
+        .swiper-container {
+        width: 100vw;
+        position: absolute;
+        top: 150px;
+        left: 5%;
+        .cards {
+            width: 100%;
+            .text {
+            display: none;
+            }
+        }
+        .cards:hover .text {
+        width: 100%;
+        padding: 5px;
+        display: block;
+            h3 {
+            font-size: 14px;
+            color: #f0781e;
+            margin: 0;
+            }
+        }  
+            .swiper-slide{
+            padding: 5px;
+            background-color: burlywood;
+            width: 280px !important;
+            text-align: center;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: inline-block;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: flex-end;
+            margin: 0 28px;
+                .imgsrc1:hover,
+                .imgsrc2:hover,
+                .imgsrc3:hover {
+                display: unset;
+                }
+          
+            } 
+        }
+    }  
+}
+
+
+
+
+

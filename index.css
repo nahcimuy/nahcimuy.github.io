@@ -1,0 +1,125 @@
+body {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.d-none {
+  display: block;
+}
+
+.d-none .container {
+  width: 960px;
+}
+
+.d-none .container .group {
+  width: 100%;
+  padding: 5px;
+  top: 150px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-none .container .group .cards {
+  width: 100%;
+  padding: 20px;
+  margin: 0 50px;
+  display: block;
+}
+
+.d-none .container .group .cards text {
+  display: none;
+}
+
+.d-none .container .group .cards:hover .text {
+  width: 100%;
+  padding: 5px;
+  display: block;
+}
+
+.d-none .container .group .imgsrc1 {
+  height: 200px;
+  background-image: url("./wooden door.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.d-none .container .group .imgsrc2 {
+  height: 200px;
+  background-image: url("./zhcheng.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.d-none .container .group .imgsrc3 {
+  height: 200px;
+  background-image: url("./Sumikko Gurashi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.d-none .container .group .imgsrc1:hover,
+.d-none .container .group .imgsrc2:hover,
+.d-none .container .group .imgsrc3:hover {
+  background-image: unset;
+  background-color: salmon;
+}
+
+@media (max-width: 500px) {
+  .d-none {
+    display: none;
+  }
+  .d-block {
+    display: block;
+  }
+  .d-block .swiper-container {
+    width: 100vw;
+    position: absolute;
+    top: 150px;
+    left: 5%;
+  }
+  .d-block .swiper-container .cards {
+    width: 100%;
+  }
+  .d-block .swiper-container .cards .text {
+    display: none;
+  }
+  .d-block .swiper-container .cards:hover .text {
+    width: 100%;
+    padding: 5px;
+    display: block;
+  }
+  .d-block .swiper-container .cards:hover .text h3 {
+    font-size: 14px;
+    color: #f0781e;
+    margin: 0;
+  }
+  .d-block .swiper-container .swiper-slide {
+    padding: 5px;
+    background-color: burlywood;
+    width: 280px !important;
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: inline-block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-end;
+    margin: 0 28px;
+  }
+  .d-block .swiper-container .swiper-slide .imgsrc1:hover,
+  .d-block .swiper-container .swiper-slide .imgsrc2:hover,
+  .d-block .swiper-container .swiper-slide .imgsrc3:hover {
+    display: unset;
+  }
+}
+/*# sourceMappingURL=index.css.map */

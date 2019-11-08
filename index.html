@@ -4,13 +4,22 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Noto+Sans+TC|Share+Tech+Mono&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"  type="text/css" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>collection</title>
 </head>
 <style>
+    body {
+        width: 100%;
+        margin: 0;
+        position: relative;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    
     .container {
         width: 960px;
     }
@@ -19,7 +28,6 @@
         width: 100%;
         padding: 5px;
         top: 150px;
-        z-index: 100;
         position: absolute;
         display: flex;
     }
@@ -28,9 +36,7 @@
         width: 100%;
         padding: 20px;
         margin: 0 50px;
-
         display: block;
-        z-index: 100;
     }
 
     .imgsrc1 {
@@ -87,293 +93,6 @@
         display: none;
     }
 
-    :root {
-        --c_bg: #fff;
-        --c_00: #757474;
-        --c_01: #ff7171;
-        --c_02: #4ae974;
-        --c_03: #67a4ff;
-        --c_04: #fcf35f;
-    }
-
-    body {
-        width: 100%;
-        margin: 0;
-        position: relative;
-        overflow: hidden;
-        font-family: 'Noto Sans TC', sans-serif;
-    }
-
-    ::-moz-selection {
-        background-color: transparent;
-    }
-
-    ::selection {
-        background-color: transparent;
-    }
-
-    .p-circle,
-    .dot--1::before,
-    .dot--2::before,
-    .dot--3::before,
-    .dot--4::before,
-    .dot--15::before,
-    .dot--16::before,
-    .dot--17::before,
-    .dot--18::before {
-        border-radius: 50%;
-    }
-
-    .p-rotate-45,
-    .dot--11::before,
-    .dot--12::before,
-    .dot--13::before,
-    .dot--14::before {
-        -webkit-transform: rotateZ(45deg);
-        transform: rotateZ(45deg);
-    }
-
-    .canvas {
-        width: 100%;
-        height: 100%;
-        background-color: var(--c_bg);
-        cursor: pointer;
-    }
-
-    .dots {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(10, 6rem);
-        grid-template-rows: repeat(10, 6rem);
-        place-content: center;
-        text-align: center;
-    }
-
-    .c-1::before {
-        background-color: var(--c_01);
-    }
-
-    .c-2::before {
-        background-color: var(--c_02);
-    }
-
-    .c-3::before {
-        background-color: var(--c_03);
-    }
-
-    .c-4::before {
-        background-color: var(--c_04);
-    }
-
-    .dot {
-        width: 100%;
-        height: 100%;
-        color: var(--c_00);
-        font-size: 1rem;
-        line-height: 5rem;
-        overflow: hidden;
-        position: relative;
-        z-index: 30;
-    }
-
-    .dot::before {
-        content: '';
-        position: absolute;
-        z-index: -10;
-    }
-
-    .dot--1::before {
-        width: 2.1428571429rem;
-        height: 2.1428571429rem;
-        top: 0;
-        right: 0;
-    }
-
-    .dot--2::before {
-        width: 2.1428571429rem;
-        height: 2.1428571429rem;
-        bottom: 0;
-        left: 0;
-    }
-
-    .dot--3::before {
-        width: 2.1428571429rem;
-        height: 2.1428571429rem;
-        top: 0;
-        left: 0;
-    }
-
-    .dot--4::before {
-        width: 2.1428571429rem;
-        height: 2.1428571429rem;
-        bottom: 0;
-        right: 0;
-    }
-
-    .dot--5::before {
-        width: 100%;
-        height: 60%;
-        top: 0;
-        left: 0;
-    }
-
-    .dot--6::before {
-        width: 100%;
-        height: 60%;
-        bottom: 0;
-        left: 0;
-    }
-
-    .dot--7::before {
-        width: 60%;
-        height: 100%;
-        top: 0;
-        right: 0;
-    }
-
-    .dot--8::before {
-        width: 60%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
-
-    .dot--9::before {
-        width: 20%;
-        height: 100%;
-        top: 0;
-        left: 40%;
-    }
-
-    .dot--10::before {
-        width: 100%;
-        height: 20%;
-        top: 40%;
-        left: 0;
-    }
-
-    .dot--11::before {
-        width: 150%;
-        height: 150%;
-        top: -80%;
-        left: 24%;
-    }
-
-    .dot--12::before {
-        width: 150%;
-        height: 150%;
-        top: -80%;
-        right: 24%;
-    }
-
-    .dot--13::before {
-        width: 150%;
-        height: 150%;
-        bottom: -80%;
-        right: 24%;
-    }
-
-    .dot--14::before {
-        width: 150%;
-        height: 150%;
-        bottom: -80%;
-        left: 24%;
-    }
-
-    .dot--15::before {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: -35%;
-    }
-
-    .dot--16::before {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        right: -35%;
-    }
-
-    .dot--17::before {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        width: 100%;
-        height: 100%;
-        top: -35%;
-        left: 0;
-    }
-
-    .dot--18::before {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        width: 100%;
-        height: 100%;
-        bottom: -35%;
-        left: 0;
-    }
-
-    .dot--19::before {
-        width: 20%;
-        height: 20%;
-        top: 0;
-        left: 0;
-    }
-
-    .dot--20::before {
-        width: 20%;
-        height: 20%;
-        right: 0;
-        bottom: 0;
-    }
-
-    .dot--21::before {
-        width: 20%;
-        height: 20%;
-        top: 0;
-        right: 0;
-    }
-
-    .dot--22::before {
-        width: 20%;
-        height: 20%;
-        left: 0;
-        bottom: 0;
-    }
-
-    .dot--23::before {
-        width: 100%;
-        height: 20%;
-        top: 0;
-        left: 0;
-    }
-
-    .dot--24::before {
-        width: 100%;
-        height: 20%;
-        bottom: 0;
-        left: 0;
-    }
-
-    .dot--25::before {
-        width: 20%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
-
-    .dot--26::before {
-        width: 20%;
-        height: 100%;
-        top: 0;
-        right: 0;
-    }
-
-
     @media(max-width:500px) {
         .d-none {
             display: none;
@@ -412,7 +131,7 @@
         .swiper-slide {
             width: 280px !important;
             text-align: center;
-            /* Center slide text vertically */
+           
             display: -webkit-box;
             display: -ms-flexbox;
             display: -webkit-flex;
@@ -428,10 +147,10 @@
             margin: 0 28px;
         }
         .imgsrc1:hover,
-    .imgsrc2:hover,
-    .imgsrc3:hover {
-        display: unset;
-    }
+        .imgsrc2:hover,
+        .imgsrc3:hover {
+            display: unset;
+        }
     }
 </style>
 
@@ -464,7 +183,7 @@
     </div>
     <div class="d-block swiper-container">
         <div class="swiper-wrapper">
-            <div class="cards swiper-slide ">
+            <div class="cards swiper-slide">
                 <div class="imgsrc1"></div>
                 <div class="text">
                     <h3>木門咖啡</h3>
@@ -474,7 +193,7 @@
                 </div>
             </div>
             <div class="cards swiper-slide">
-                <div class="card imgsrc2"></div>
+                <div class="imgsrc2"></div>
                 <div class="text">
                     <h3>智丞有限公司</h3>
                     <p>公司營運十餘年，但並無使用網路曝光與推廣，考量現今資訊多有網路瀏覽，故規劃網頁增強曝光，整體使用淺藍色作為基點色，並使用圖像與文字展現營業項目，留下表單與聯絡資訊做媒介。
@@ -483,7 +202,7 @@
                 </div>
             </div>
             <div class="cards swiper-slide">
-                <div class="card imgsrc3"></div>
+                <div class="imgsrc3"></div>
                 <div class="text">
                     <h3>Sumikko Gurashi</h3>
                     <p>自己刻板做RWD效果，在不同畫面使用media會改合適版型，不會跑版，背景與選色上較舒適與溫暖的色系，套用不同動畫效果搭配，使網頁增添活潑感。
@@ -499,95 +218,7 @@
         <div class="swiper-pagination"></div>
 
     </div>
-    <div class="canvas">
-        <div class="dots"><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span class="dot">•</span><span
-                class="dot">•</span>
-        </div>
-    </div>
-
-    <script>
-
-        /* 
-  * BAUHAUS DOTTED PATTERNS
-  * Generative patterns created for #CodePenChallenge 100 Dots. 
-  * Click/tap on your screen to create a new pattern.
-  * 
-  * Generative patterns are infinite, so click/tap as many times as you'd like.
-  * This year is 100 years of Bauhaus.
-  *
-  * #008 - #100DaysOfCode
-  * By ilithya | 2019
-  */
-
-        const getRandomInt = max => {
-            return Math.floor(Math.random() * Math.floor(max));
-        };
-
-        const colorClass = {
-            options: ["c-1", "c-2", "c-3", "c-4"],
-            addRandom: function (el) {
-                const randomColor = getRandomInt(colorClass.options.length);
-                const selectedClass = colorClass.options[randomColor];
-
-                el.classList.add(selectedClass);
-            }
-        };
-
-
-        const createGenerativePattern = {
-            addEachClass: function (el) {
-                el.forEach(item => {
-                    // Let us first remove all classes, to reset them later
-                    item.className = "";
-
-                    /* Reset Class Names */
-                    // Let's create the shared class and random shape class
-                    const sharedClass = "dot";
-                    const shapeClassNum = 26;
-                    const randomNum = getRandomInt(shapeClassNum);
-                    item.classList.add(sharedClass, `${sharedClass}--${randomNum}`);
-                    // FYI: There'll be a dot--0 class created intentionally which has no styles, as it was desired to have random empty cells too
-
-                    // Let's create the random color class
-                    colorClass.addRandom(item);
-                });
-            },
-            run: function () {
-                const dot = document.querySelectorAll(".dot");
-                createGenerativePattern.addEachClass(dot);
-            }
-        };
-
-
-        createGenerativePattern.run();
-
-        const canvas = document.querySelector(".canvas");
-        canvas.addEventListener("click", createGenerativePattern.run, false);
-    </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
