@@ -44,8 +44,8 @@ body {
     }
     .cards {
         width: 100%;
-        padding: 20px;
-        margin: 0 50px;
+        padding: 10px;
+        margin: 0 15px;
         display: block;
             .text {
             display: none;
@@ -53,15 +53,15 @@ body {
         }
     .cards:hover .text {
         width: 100%;
-        padding: 5px;
+        padding: 10px;
         display: block;
         h3 {
-            font-size: 18px;
+            font-size: 20px;
             margin: 5px 0;
         }
         p{
-            font-size: 16px;
-            margin: 0 0 5px;
+            font-size: 15px;
+            margin: unset;
         }
         }
     }
@@ -69,7 +69,7 @@ body {
 .d-block {
     display: none;
 }
-@media(max-width:500px) {
+@media(max-width:800px) {
      .d-none{
     display: none;
     }
@@ -77,11 +77,10 @@ body {
         display: block;
     }
     .swiper-container {
-        width: 100vw;
+        width: 90vw;
         margin: 50px 0;
-        padding: 5px;
         .swiper-wrapper{
-                width: 80%;
+                width: 100%;
             .swiper-slide{
                 padding: 5px;
                 background-color: burlywood;
@@ -91,7 +90,7 @@ body {
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: -webkit-flex;
-                display: inline-block;
+                display: block;
                 -webkit-box-pack: center;
                 -ms-flex-pack: center;
                 -webkit-justify-content: center;
@@ -101,33 +100,8 @@ body {
                 -webkit-align-items: center;
                 align-items: flex-end;
                 margin: 0 30px;
-               
-                .imgsrc1 {
-                @include background();
-                background-image: url("./wooden door.png");
-                }
-                .imgsrc2 {
-                @include background();
-                background-image: url("./zhcheng.png");
-                }
-                .imgsrc3 {
-                @include background();
-                background-image: url("./Sumikko Gurashi.png");
-                }
-                .imgsrc1:hover,
-                .imgsrc2:hover,
-                .imgsrc3:hover {
-                display: none;
-                }
                 .text{
-                    display: none;
-                } 
-                .imgsrc1:hover .text,
-                .imgsrc2:hover .text,
-                .imgsrc3:hover .text {
-                width: 100%;
-                padding: 5px;
-                display: block;
+                    display: block;
                     h3 {
                         font-size: 18px;
                         color: #f0781e;
@@ -137,7 +111,50 @@ body {
                         font-size: 16px;
                         margin: 0 0 5px;
                     }
-                }   
+                }
+                .imgsrc1 {
+                @include background();
+                background-image: url("./wooden door.png");
+                .imgsrc1:hover {
+                display: unset;
+                }  
+                } 
+                
+            
+                .imgsrc2 {
+                @include background();
+                background-image: url("./zhcheng.png");
+               
+                .imgsrc2:hover{
+                display: unset;
+                }
+                }
+                .imgsrc3 {
+                @include background();
+                background-image: url("./Sumikko Gurashi.png");
+                .imgsrc3:hover {
+                display: unset;
+                }
+                }
+                
+                
+                .imgsrc1:hover .text,
+                .imgsrc2:hover .text,
+                .imgsrc3:hover .text {
+                width: 100%;
+                padding: 5px;
+                display: block;
+                    
+                }
+                h3 {
+                        font-size: 18px;
+                        color: #f0781e;
+                        margin: 5px 0;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin: 0 0 5px;
+                    }   
             }
         }
     }
