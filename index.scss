@@ -70,12 +70,12 @@ body {
     display: none;
 }
 @media(max-width:800px) {
-     .d-none{
+    .d-none{
     display: none;
     }
     .d-block {
         display: block;
-    }
+    }    
     .swiper-container {
         width: 90vw;
         margin: 50px 0;
@@ -84,7 +84,7 @@ body {
             .swiper-slide{
                 padding: 5px;
                 background-color: burlywood;
-                width: 80% !important;
+                width: 90% !important;
                 text-align: center;
                 /* Center slide text vertically */
                 display: -webkit-box;
@@ -99,10 +99,16 @@ body {
                 -ms-flex-align: center;
                 -webkit-align-items: center;
                 align-items: flex-end;
-                margin: 0 30px;
-                .text{
+                margin: 0 33px;
+               
+                .text1{
                     display: block;
-                    h3 {
+                    .pic{
+                    width: 90%;
+                    display: block;
+                    background-image: url("./wooden door.png");
+                    }
+                    h3{
                         font-size: 18px;
                         color: #f0781e;
                         margin: 5px 0;
@@ -111,14 +117,16 @@ body {
                         font-size: 16px;
                         margin: 0 0 5px;
                     }
+                    
                 }
-                .imgsrc1 {
-                @include background();
-                background-image: url("./wooden door.png");
-                .imgsrc1:hover {
-                display: unset;
-                }  
-                } 
+               
+                // .imgsrc1 {
+                // @include background();
+                // background-image: url("./wooden door.png");
+                // .imgsrc1:hover {
+                // display: unset;
+                // }  
+                // } 
                 
             
                 .imgsrc2 {
